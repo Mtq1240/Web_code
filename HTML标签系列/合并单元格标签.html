@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title> 合并单元格 </title>
+</head>
+<body>
+    <table width="500" height="249" border="1" cellspacing="0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>   <!--   1.先确定是跨行还是跨列
+                                           2.找到目标单元格.写上合并方式 = 合并的单元格数量,比如:<td colspan="2"></th>
+                                           3.删除多余的单元格       -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!--基础选择器-标签选择器-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS语法规范,标签选择器</title>
+    <style>
+        /* 选择器分为 基础选择器 复合选择器 */
+        /* 基础选择器分为 标签选择器 类选择器 id选择器 */
+        /* 选择器{样式} */
+        /* 给谁选样式{改什么样式} */
+        p {
+            /* 标签选择器 */
+            color: red;
+            /* 修改了文字大小为12像素 */
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+    <p>有点意思</p>
+</body>
+</html>
+
+<!--基础选择器-类选择器-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <style>
+        /* 单独选择一个或者选某几个标签,可以使用类选择器 */
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red">111</li>
+        <li class="red">222</li>
+        <li class="red">333</li>
+        <li>444</li>
+    </ul>
+    <div class="red">变红色</div>
+</body>
+</html>

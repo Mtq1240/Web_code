@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签使用</title>
+</head>
+
+<!--<thead></thead>:用于定义表格的头部,<thead>内部必须拥有<tr>标签.一般位于第一位-->
+<!--<tbody></tbody>:用于定义表格的主体,主要用于放数据本体-->
+<!--以上标签都是放在<table></table>标签中-->
+<body>      <!--align:表格浏览器中对齐 cellpadding:单元边沿与其内容之间的空白 cellspacing:单元格之间的空白,默认为2-->
+    <table align="center" width="500" height="249" border="1" cellspacing="0" cellpadding="15">
+    <tr>                <!--border:规定表格单元格是否有边框,默认为"",表示没有边框-->
+        <th>排名</th> 
+        <th>关键词</th> 
+        <th>趋势</th>
+        <th>今日搜索</th> 
+        <th>最近七日</th> 
+        <th>相关链接</th> 
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td><img src="up.jpg"></td>
+        <td>345</td>
+        <td>123</td>
+        <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>盗墓笔记</td>
+        <td><img src="down(1).jpg"></td>
+        <td>345</td>
+        <td>123</td>
+        <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>西游记</td>
+        <td><img src="up.jpg"></td>
+        <td>345</td>
+        <td>123</td>
+        <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+    </tr>
+    </table>
+</body>
+</html>

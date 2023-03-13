@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CSS字体属性</title>
+    <!-- 各种字体之间必须使用英文状态下的逗号隔开 -->
+    <!-- 一般的,如果有空格隔开的多个单词组成的字体,加引号 -->
+    <!-- 尽量使用系统默认自带字体,保证任何用户的浏览器都能显示 -->
+    <style>
+        h1 {
+            font-family: 'Microsoft YaHei';
+        }
+        p {
+            font-family: 'Microsoft YaHei';
+        }
+        /* font-size属性指定文字像素大小 */
+        /* 标题标签比较特殊,需要单独指定文字大小 */
+        body {
+            font-size: 12px;
+        }
+        .bold {
+            /* font-weight: 加粗 */
+            /* font-weight: bold; */
+            /* 实际开发中,更适合用数字 */
+            font-weight: 700;
+        }
+        /* normal:属性默认值不加粗,bold:定义粗体,100~900:400等同于normal,700等同于bold,数字后面不跟单位 */
+        h1 {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>这是示例</h1>
+    <p>示例</p>
+    <p>示例</p>
+    <p class="bold">示例</p>
+    <p>示例</p>
+</body>
+</html>

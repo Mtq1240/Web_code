@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 可以选择父元素里的子元素,元素1和元素2用空格隔开 */
+        /* 可以是任意基础选择器 */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+        <li><a href="#">示例示例示例</a></li>
+    </ol>
+    <ul>
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+    </ul>
+    <ul class="nav">
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+        <li><a href="#">示例示例示例</a></li>
+    </ul>
+</body>
+
+</html>

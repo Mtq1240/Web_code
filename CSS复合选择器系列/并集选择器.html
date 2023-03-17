@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 并集选择器可以选择多组标签,同时为他们定义相同的样式,通常用于集体声明,元素之间用 , 隔开 */
+        /* 1.将div和p改成粉色 */
+        /* div, 
+        p {
+            color: pink;
+        } */
+        /* 2.将div p改成粉色,ul里的li也都改成粉色 */
+        div,
+        p,
+        .label {
+            color: pink;
+        }
+
+        /* 并集选择器竖着写 */
+    </style>
+</head>
+
+<body>
+    <div>示例示例示例</div>
+    <p>示例示例</p>
+    <span>示例示例</span>
+    <ul class="label">
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+        <li>示例示例示例</li>
+    </ul>
+</body>
+
+</html>

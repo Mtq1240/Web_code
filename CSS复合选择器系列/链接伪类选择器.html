@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a:link 未访问的链接 把没有点击过的(访问过的)链接选出来 */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* a:visited 选择点击过的(访问过的)链接 */
+        a:visited {
+            color: aquamarine;
+        }
+
+        /* a:honver 选择鼠标经过的那个链接 */
+        a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        /* a:active 选择的是我们鼠标正在按下还没有弹起鼠标的 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 按照LVHA的顺序声明
+    因为a链接在浏览器中具有默认样式,所以实际工作中都需要给链接单独指定样式 -->
+    <a href="https://www.baidu.com">百度</a>
+</body>
+
+</html>

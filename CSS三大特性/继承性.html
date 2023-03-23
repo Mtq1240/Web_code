@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承性</title>
+    <style>
+        /* 子标签会继承父标签的某些央视, */
+        body {
+            color: pink;
+            /* font: 12px/24px 'Microsoft YaHei'; */
+            /* 1.5 让子元素的文字大小的1.5倍,即行高相较于文字大小的1.5倍 */
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+
+        div {
+            /* 子元素继承父元素 body 的行高1.5 */
+            /* 这个 1.5 就是当前元素文字大小 font-size 的1.5倍 所以当前div的行高21像素 */
+            font-size: 14px;
+        }
+
+        p {
+            /* 行高:12*1.5 */
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>示例示例示例示例示例示例示例</div>
+    <p>示例示例示例示例示例示例示例</p>
+    <ul>
+        <!-- li没有手动指定文字大小,则会继承父亲的文字大小, body 12px  -->
+        <!-- li的行高就是12*1.5 -->
+        <li>示例示例示例示例示例示例示例</li>
+    </ul>
+</body>
+
+</html>

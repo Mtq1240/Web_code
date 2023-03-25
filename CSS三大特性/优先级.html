@@ -18,11 +18,33 @@
         .div1 {
             color: blue;
         }
+
+        /* father的权重是 100 */
+        #father {
+            color: red;
+        }
+
+        /* p继承的权重是 0,
+        所以看到标签到底执行哪个样式,就先看这个标签有没有被选出来 */
+        p {
+            color: pink;
+        }
+
+        body {
+            color: yellow;
+        }
+
+        /* a链接浏览器默认指定了样式 有下划线 a{color:blue;}
+        所以想要对a标签修改样式就得另外给 a 标签指定样式 */
     </style>
 </head>
 
 <body>
     <div class="div1">示例示例示例</div>
+    <div id="father">
+        <p>示例示例示例</p>
+    </div>
+    <a href="#">示例示例示例</a>
 </body>
 
 </html>

@@ -16,6 +16,19 @@
             border-color: pink;
             /* border-style:边框的样式 solid 实线边框; dashed 虚线边框; dotted 点线边框; */
             border-style: dashed;
+
+            /* 边框的复合写法 没有顺序 */
+            border: 1px solid blue;
+
+            /* 边框分变写法 */
+            /* border-top: 5px dotted blue;
+            border-left: 5px dotted red;
+            border-right: 5px solid pink;
+            border-bottom: 10px dashed purple; */
+
+            /* 层叠性 border包含了四条边 不能颠倒顺序 */
+            border: 5px dotted blue;
+            border-top: 10px dashed pink;
         }
     </style>
 </head>

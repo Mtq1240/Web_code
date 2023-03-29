@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 使用 margin 定义块元素的垂直边距时,会出现外边距合并
+            margin-bottom 和 margin-top 之间的间距不是他俩之和, 
+            是取两个值中的较大者,这种现象被称为 相邻块元素垂直外边距的合并
+            解决:尽量只给一个盒子加外边距 */
+        .one {
+            margin-bottom: 100px;
+        }
+
+        .two {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">示例</div>
+    <div class="two">示例</div>
+</body>
+
+</html>

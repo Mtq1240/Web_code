@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 网页元素很多自带内外边距,布局前我们可以先清除网页元素的内外边距 */
+        /* 通配符清除所有元素内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            background-color: skyblue;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    123
+    <ul>
+        <li>123</li>
+    </ul>
+    <!-- 行内元素为了兼容性,尽量只设置左右内外边距,不要设置上下内外边距,但是转换为块级和行内块元素就可以了 -->
+    <span>aaa</span>
+</body>
+
+</html>

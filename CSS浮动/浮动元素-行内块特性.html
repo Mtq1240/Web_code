@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* span 是行内元素,给它添加 float 属性就会有行内块相似特性
+            如果行内元素有了浮动,则不需要转换为块级\行内快元素,就可以直接给高度和宽度 */
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+
+        p {
+            height: 200px;
+            background-color: purple;
+            float: left;
+            /* 如果块级盒子没有设置宽度,默认宽度和父级一样宽,但是浮动后,它的大小由内容决定 
+                浮动的盒子中间没有空隙,是紧挨的*/
+        }
+    </style>
+</head>
+
+<body>
+    <span>行内块特性</span>
+    <p>pppp</p>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 10px auto;
+            width: 1200px;
+            /* height: 300px; */
+            background-color: pink;
+            /* 清除浮动 */
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+        }
+
+        .right {
+            float: right;
+            width: 950px;
+            height: 300px;
+            background-color: orange;
+        }
+
+        /* 清除浮动1 额外标签法 */
+        /* .clearfix {
+            clear: both;
+        } */
+
+        /* 清除浮动2 单伪元素法 */
+        /* .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+        /* 清除浮动3 双伪元素法(推荐)
+            before 解决了外边距塌陷问题 */
+        /* .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+        /* after 清除浮动 */
+        /* .clearfix::after {
+            clear: both;
+        } */
+        .bottom {
+            height: 100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+        <!-- 额外标签法,清除浮动,写在父元素的最后 -->
+        <div class="clearfix"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+
+</html>

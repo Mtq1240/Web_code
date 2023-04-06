@@ -12,11 +12,37 @@
             border: 1px solid #000;
 
             display: flex;
-            /* justify-content: start:从起点;end 从终点 center 弹性盒子沿着主轴居中排列;
+            /* justify-content: start:从起点,end 从终点, center 弹性盒子沿着主轴居中排列;
                 space-between 弹性盒子沿主轴均匀排列,空白间距均分在弹性盒子之间 ,分配空白空间是父级剩余的尺寸分配成间距,间距相等
                 space-around 弹性盒子沿主轴均匀排列,空白间距均分在弹性盒子两侧  ,间距围绕出现在弹性盒子两侧,弹性盒子之间的间距是两端间距的2倍
                 space-evenly 弹性盒子沿主轴均匀排列,弹性盒子与容器之间间距相等 ,各个间距都相等 */
+
+            /* 控制所有弹性盒子用align-items,控制指定盒子用align-self */
+            /* align-items: stretch:弹性盒子沿着侧轴线被拉伸至铺满容器 (弹性盒子没有设置侧轴方向即height的尺寸则默认拉伸);
+                         center:弹性盒子沿侧轴居中排列;
+                         flex-star:弹性盒子从起点开始依次排列;
+                         flex-end:弹性盒子从终点开始依次排列; */
         }
+
+        /* 第二个盒子div侧轴居中对齐 */
+        .box div:nth-child(2) {
+            align-self: center;
+        }
+
+        /* nth-child 是 CSS 选择器中的一种伪类选择器，用于选择某个元素的父元素下的第 N 个子元素，无论该子元素的类型是什么。
+        其中，N 可以是一个数字、关键词（例如 even 或 odd）或公式（例如 2n+1），用来匹配符合条件的子元素。
+        例如：
+        p:nth-child(2) 选中其父元素中的第二个 p 元素。
+        ul li:nth-child(even) 选中其父元素中的所有偶数位置的 li 元素。
+        div:nth-child(3n+1) 选中其父元素中每隔两个元素的第一个 div 元素。
+
+        需要注意的是，与 nth-of-type 选择器不同，nth-child 选择器会选中当前元素的所有子元素，并根据括号\u5185\u6307定的序号来匹配选择子元素。
+        如果某个父元素中没有符合条件的子元素，这个样式规则就不会作用到任何元素上。nth-of-type 是 CSS 选择器中的一种伪类选择器，用于选择某个元素父元素下指定类型的第 N 个子元素.
+        其中，N 可以是一个数字、关键词（例如 even 或 odd）或公式（例如 2n+1），用来匹配符合条件的子元素。
+        例如：
+        p:nth-of-type(2) 选中其父元素中的第二个 p 元素。
+        ul li:nth-of-type(even) 选中其父元素中的所有偶数位置的 li 元素。
+        div:nth-of-type(3n+1) 选中其父元素中每隔两个元素的第一个 div 元素。 */
 
         .box div {
             width: 200px;

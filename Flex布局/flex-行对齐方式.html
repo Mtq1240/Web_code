@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            /* 调整行 对齐方式 align-content: ; 对 1 行的弹性盒子不生效!!!  */
+            /* 和主轴 justify-content 对齐方式属性一样,只不过这是以 行 对象对齐
+                start:从起点,end 从终点, center 弹性盒子沿着主轴居中排列;
+                space-between 弹性盒子沿主轴均匀排列,空白间距均分在弹性盒子之间 ,分配空白空间是父级剩余的尺寸分配成间距,间距相等
+                space-around 弹性盒子沿主轴均匀排列,空白间距均分在弹性盒子两侧  ,间距围绕出现在弹性盒子两侧,弹性盒子之间的间距是两端间距的2倍
+                space-evenly 弹性盒子沿主轴均匀排列,弹性盒子与容器之间间距相等 ,各个间距都相等 */
+            align-content: space-evenly;
+
+            height: 400px;
+            border: 1px solid pink;
+        }
+
+        .box div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

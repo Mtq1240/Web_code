@@ -1,0 +1,58 @@
+/* 首页样式 */
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 头部区域 */
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper {
+    display: flex;
+    padding-top: 29px;
+}
+
+/* logo 单击跳转首页,搜索引擎优化 */
+.logo a {
+    /* 行转块 */
+    display: block;
+    width: 195px;
+    height: 42px;
+    /* 设置链接字体大小为0隐藏 */
+    font-size: 0;
+    background-image: url(../images/logo.png);
+}
+
+/* 导航 */
+.header .nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+active 类选择器,
+默认选中的a .nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}

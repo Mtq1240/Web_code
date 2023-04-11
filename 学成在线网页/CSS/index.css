@@ -51,8 +51,60 @@ body {
     font-size: 19px;
 }
 
-active 类选择器,
-默认选中的a .nav li .active,
+/* active 类选择器,默认选中的a  */
+.nav li .active,
 .nav li a:hover {
     border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.header .search {
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    /* 去除焦点框 */
+    outline: none;
+}
+
+/* ::placeholder 选中就是 placeholder 属性文字样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.search a {
+    /* 父级 search 已经flex a已经变成弹性盒子 加宽高直接生效 */
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    background-image: url(../images/search.png);
+}
+
+/* 用户区域 */
+.user {
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+.user img {
+    /* vertical-align 行内块和行内元素垂直方向对齐方式 */
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
 }

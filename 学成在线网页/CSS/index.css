@@ -108,3 +108,141 @@ body {
     font-size: 16px;
     color: #666;
 }
+
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+
+/* left 区域 */
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgb(0, 0, 0, 0.42);
+}
+
+.banner .left a {
+    /* 块级: 宽度默认是父级 left 宽度%100 */
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: white;
+}
+
+/* 悬停效果 */
+.banner .left a:hover {
+    background: url(../images/right-hover.png) no-repeat right center;
+    color: #00a4ff;
+}
+
+/* right区域 */
+.banner .right {
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    height: 48px;
+    line-height: 49px;
+    margin-left: 14px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.banner .right .contend {
+    height: 257px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.banner .contend dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right dd {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.banner .right dd span {
+    color: #00a4ff;
+}
+
+.banner .right dd strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right .contend a {
+    display: block;
+    background-color: #00a4ff;
+    height: 32px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-size: 14px;
+}
+
+/* 精品推荐区域 */
+.recommend {
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    display: flex;
+}
+
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.recommend ul {
+    /* 除去标题和 修改兴趣 的尺寸,父级剩余尺寸都给 ul,实现把 修改兴趣挤到盒子最后面 */
+    flex: 1;
+    display: flex;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    /* a 是行内 ,高度靠内容撑开 */
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.recommend ul li:last-child a {
+    border-right: 0;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}

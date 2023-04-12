@@ -1,248 +1,111 @@
-/* 首页样式 */
-/* 版心居中 */
-.wrapper {
-    margin: 0 auto;
-    width: 1200px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    background-color: #f3f5f7;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <!-- 先清除在设置 -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
 
-/* 头部区域 */
-.header {
-    height: 100px;
-    background-color: #fff;
-}
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <div class="wrapper">
+            <!-- logo -->
+            <div class="logo">
+                <h1><a href="#">学成在线</a></h1>
+            </div>
+            <!-- 导航 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">职业规划</a></li>
+                </ul>
+            </div>
+            <!-- 搜索 -->
+            <div class="search">
+                <input type="text" placeholder="请输入关键词">
+                <a href="#"></a>
+            </div>
+            <!-- 用户 -->
+            <div class="user">
+                <a href="#">
+                    <img src="./uploads/user.png" alt="">
+                    <span>用户名XX</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
-.header .wrapper {
-    display: flex;
-    padding-top: 29px;
-}
+    <!-- banner 区域 -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">后端开发</a></li>
+                    <li><a href="#">移动开发</a></li>
+                    <li><a href="#">人工智能</a></li>
+                    <li><a href="#">商业预测</a></li>
+                    <li><a href="#">云计算&大数据</a></li>
+                    <li><a href="#">运维&测试</a></li>
+                    <li><a href="#">UI设计</a></li>
+                    <li><a href="#">产品</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>我的课程表</h3>
+                <div class="contend">
+                    <dl>
+                        <dt>数据可视化课程</dt>
+                        <dd><span>正在学习</span>-<strong>echarts使用步骤</strong></dd>
+                    </dl>
+                    <dl>
+                        <dt>Vue医疗项目课程</dt>
+                        <dd><span>正在学习</span>-<strong>认识组合式API</strong></dd>
+                    </dl>
+                    <dl>
+                        <dt>React核心技术课程</dt>
+                        <dd><span>正在学习</span>-<strong>rudex配合TS使用</strong></dd>
+                    </dl>
+                    <a href="#">全部课程</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-/* logo 单击跳转首页,搜索引擎优化 */
-.logo a {
-    /* 行转块 */
-    display: block;
-    width: 195px;
-    height: 42px;
-    /* 设置链接字体大小为0隐藏 */
-    font-size: 0;
-    background-image: url(../images/logo.png);
-}
+    <!-- 精品推荐区域 -->
+    <div class="recommend wrapper">
+        <h3>精品推荐</h3>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">Ajax</a></li>
+            <li><a href="#">Vue2.0</a></li>
+            <li><a href="#">Vue3.0</a></li>
+            <li><a href="#">TypeScript</a></li>
+            <li><a href="#">React</a></li>
+        </ul>
+        <a href="#" class="modify">修改兴趣</a>
+    </div>
 
-/* 导航 */
-.header .nav {
-    margin-left: 102px;
-}
+    <!-- course 区域 -->
+    <div class="course wrapper">
+        <!-- 标题 -->
+        <div class="hd">
+            <h3>精品推荐</h3>
+            <a href="#" class="more">查看全部</a>
+        </div>
+        <!-- 内容 -->
+        <div class="bd"></div>
+    </div>
+</body>
 
-.nav ul {
-    display: flex;
-}
-
-.nav li {
-    margin-right: 24px;
-}
-
-.nav li a {
-    display: block;
-    padding: 6px 8px;
-    line-height: 27px;
-    font-size: 19px;
-}
-
-/* active 类选择器,默认选中的a  */
-.nav li .active,
-.nav li a:hover {
-    border-bottom: 2px solid #00a4ff;
-}
-
-/* 搜索 */
-.header .search {
-    display: flex;
-    width: 412px;
-    height: 40px;
-    background-color: #f3f5f7;
-    border-radius: 20px;
-    margin-left: 64px;
-    padding-left: 19px;
-    padding-right: 12px;
-}
-
-.search input {
-    flex: 1;
-    border: 0;
-    background-color: transparent;
-    /* 去除焦点框 */
-    outline: none;
-}
-
-/* ::placeholder 选中就是 placeholder 属性文字样式 */
-.search input::placeholder {
-    font-size: 14px;
-    color: #999999;
-}
-
-.search a {
-    /* 父级 search 已经flex a已经变成弹性盒子 加宽高直接生效 */
-    /* display: block; */
-    width: 16px;
-    height: 16px;
-    align-self: center;
-    background-image: url(../images/search.png);
-}
-
-/* 用户区域 */
-.user {
-    margin-top: 4px;
-    margin-left: 32px;
-}
-
-.user img {
-    /* vertical-align 行内块和行内元素垂直方向对齐方式 */
-    vertical-align: middle;
-    margin-right: 7px;
-}
-
-.user span {
-    font-size: 16px;
-    color: #666;
-}
-
-.banner {
-    height: 420px;
-    background-color: #0092cb;
-}
-
-.banner .wrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 420px;
-    background-image: url(../uploads/banner.png);
-}
-
-/* left 区域 */
-.banner .left {
-    padding: 3px 20px;
-    width: 191px;
-    height: 420px;
-    background-color: rgb(0, 0, 0, 0.42);
-}
-
-.banner .left a {
-    /* 块级: 宽度默认是父级 left 宽度%100 */
-    display: block;
-    height: 46px;
-    background: url(../images/right.png) no-repeat right center;
-    line-height: 46px;
-    font-size: 16px;
-    color: white;
-}
-
-/* 悬停效果 */
-.banner .left a:hover {
-    background: url(../images/right-hover.png) no-repeat right center;
-    color: #00a4ff;
-}
-
-/* right区域 */
-.banner .right {
-    width: 218px;
-    height: 305px;
-    background-color: #209dd5;
-    margin-top: 60px;
-    border-radius: 10px;
-}
-
-.banner .right h3 {
-    height: 48px;
-    line-height: 49px;
-    margin-left: 14px;
-    font-size: 15px;
-    color: white;
-    font-weight: 400;
-}
-
-.banner .right .contend {
-    height: 257px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 14px;
-}
-
-.banner .contend dl {
-    margin-bottom: 12px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.banner .right dt {
-    margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-}
-
-.banner .right dd {
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 8px;
-}
-
-.banner .right dd span {
-    color: #00a4ff;
-}
-
-.banner .right dd strong {
-    color: #7d7d7d;
-    font-weight: 400;
-}
-
-.banner .right .contend a {
-    display: block;
-    background-color: #00a4ff;
-    height: 32px;
-    border-radius: 15px;
-    text-align: center;
-    line-height: 32px;
-    color: white;
-    font-size: 14px;
-}
-
-/* 精品推荐区域 */
-.recommend {
-    margin-top: 11px;
-    padding: 0 20px;
-    height: 60px;
-    line-height: 60px;
-    background-color: #fff;
-    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
-    display: flex;
-}
-
-.recommend h3 {
-    font-size: 18px;
-    color: #00a4ff;
-    font-weight: 400;
-}
-
-.recommend ul {
-    /* 除去标题和 修改兴趣 的尺寸,父级剩余尺寸都给 ul,实现把 修改兴趣挤到盒子最后面 */
-    flex: 1;
-    display: flex;
-}
-
-.recommend ul li a {
-    padding: 0 24px;
-    /* a 是行内 ,高度靠内容撑开 */
-    border-right: 1px solid #e0e0e0;
-    font-size: 18px;
-}
-
-.recommend ul li:last-child a {
-    border-right: 0;
-}
-
-.recommend .modify {
-    font-size: 16px;
-    color: #00a4ff;
-}
+</html>

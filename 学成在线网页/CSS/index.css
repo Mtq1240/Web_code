@@ -252,9 +252,101 @@ body {
     margin-top: 15px;
 }
 
+/* 标题 - 公共类 , 与其他区域共用 */
 .hd {
     height: 60px;
     line-height: 60px;
     display: flex;
     justify-content: space-between;
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.hd .more {
+    font-size: 14px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+    padding-right: 20px;
+}
+
+/* 课程内容 - 公共类 */
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.bd li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.bd ul .img {
+    height: 156px;
+}
+
+.bd ul .text {
+    height: 115px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.bd li .text h4 {
+    height: 40px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.bd li .text p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    font-style: normal;
+}
+
+/* 前端 */
+.hd ul {
+    display: flex;
+}
+
+.hd ul li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd ul li .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+}
+
+.bd .right {
+    width: 957px;
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
 }

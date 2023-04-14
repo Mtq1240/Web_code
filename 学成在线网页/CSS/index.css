@@ -350,3 +350,59 @@ body {
     margin-bottom: 15px;
     height: 100px;
 }
+
+.footer {
+    height: 273px;
+    background-color: #fff;
+    margin-top: 60px;
+    padding-top: 60px;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    width: 440px;
+}
+
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    background-color: #fff;
+    color: #00a4ff;
+    border: solid 1px #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.footer .right {
+    display: flex;
+}
+
+.footer .right dl {
+    margin-left: 130px;
+}
+
+.footer .right dl dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer .right dl dd {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}

@@ -108,16 +108,28 @@ a {
     margin-bottom: 15px;
 }
 
+.action .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .action .wrapper span {
-    font-weight: 700;
-    font-size: 16px;
-    margin-right: 30px;
+    font-size: 10px;
     text-align: center;
     line-height: 33px;
 }
 
+.action .wrapper span a {
+    margin-left: 30px;
+}
+
 /* 列表 */
+.introduce {
+    height: 294px;
+}
+
 .introduce .wrapper .one {
+    margin-right: 9px;
     width: 311px;
     height: 225px;
     border: 1px solid #efefef;
@@ -163,17 +175,19 @@ a {
 }
 
 .introduce .wrapper .two {
+    margin-right: 9px;
     width: 374px;
     height: 225px;
     border: 1px solid #efefef;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 
 .introduce .wrapper .two h4 {
-    width: 300px;
+    display: inline-block;
+    width: 332px;
     height: 30px;
-    margin-top: 16px;
+    margin-top: 14px;
     font-weight: 700;
     font-size: 13px;
     color: #7ab800;
@@ -182,11 +196,134 @@ a {
 
 .introduce .wrapper .two h4 img {
     margin-right: 7px;
+    margin-left: 6px;
 }
 
 .introduce .wrapper .two .more {
-    font-weight: 700;
-    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 16px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 12px;
 }
 
-.introduce .wrapper .two .ul {}
+.two ul {
+    margin-left: 24px;
+    margin-right: 18px;
+}
+
+.two ul li .red {
+    color: red;
+}
+
+.two ul li {
+    font-size: 10px;
+    border-bottom: 1px dashed #dcdcdc;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    color: #666666;
+}
+
+.two ul li a {
+    color: #666666;
+}
+
+.introduce .wrapper .three {
+    width: 266px;
+    height: 225px;
+    border: 1px solid #efefef;
+}
+
+.introduce .wrapper .three h4 {
+    display: inline-block;
+    width: 266px;
+    height: 30px;
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #7ab800;
+    line-height: 30px;
+    margin-bottom: 9px;
+}
+
+.introduce .wrapper .three h4 img {
+    margin-right: 7px;
+    margin-left: 6px;
+}
+
+.three ul {
+    margin-left: 27px;
+}
+
+.three ul li {
+    line-height: 10px;
+    font-size: 10px;
+    border-left: 2px solid #7ab800;
+    margin-bottom: 8px;
+}
+
+.three ul li a {
+    padding-left: 3px;
+    color: #666666;
+}
+
+.three .fir {
+    margin-top: 40px;
+    margin-left: 27px;
+    font-size: 10px;
+    color: #666666;
+}
+
+.three .sec {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: 27px;
+    color: #666666;
+}
+
+/* bottom top */
+
+.bottom {
+    background-color: #2d2d2d;
+    width: auto;
+}
+
+.bottom .top {
+    padding-left: 20px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .wrapper .top dl {
+    padding-top: 14px;
+}
+
+.bottom .wrapper .top dl dt {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+.bottom .wrapper .top dl dd a {
+    font-size: 11px;
+    color: #707070;
+}
+
+
+/* bottom footer */
+.bottom .footer {
+    border-top: 1px dashed #707070;
+    height: 85px;
+}
+
+.bottom .footer .wrapper p {
+    font-size: 11px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+
+.bottom .footer .wrapper p {
+    text-align: center;
+}

@@ -1,99 +1,409 @@
-<!DOCTYPE html>
-<html lang="en">
+/* 首页样式 */
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>腾讯云</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+body {
+    background-color: #f3f5f7;
+}
 
-<body>
-    <!-- 头部导航区域 -->
-    <div class="header">
-        <div class="wrapper">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-            <ul>
-                <a href="#">
-                    <li>最新活动</li>
-                </a>
-                <a href="#">
-                    <li>产品</li>
-                </a>
-                <a href="#">
-                    <li>解决方案</li>
-                </a>
-                <a href="#">
-                    <li>定价</li>
-                </a>
-                <a href="#">
-                    <li>文档</li>
-                </a>
-                <a href="#">
-                    <li>企业中心</li>
-                </a>
-                <a href="#">
-                    <li>云市场</li>
-                </a>
-                <a href="#">
-                    <li>开发者支持</li>
-                </a>
-                <a href="#">
-                    <li>合作与生态</li>
-                </a>
-                <a href="#">
-                    <li>客户</li>
-                </a>
-            </ul>
-        </div>
-    </div>
+/* 头部区域 */
+.header {
+    height: 100px;
+    background-color: #fff;
+}
 
-    <!-- 列表,大图区域 -->
-    <div class="listimg">
-        <div class="wrapper">
-            <!-- 列表 -->
-            <div class="list">
-                <ul>
-                    <a href="#">
-                        <li>云服务器</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>轻量应用服务器</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>域名注册</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>网站备案</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>对象存储</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>云硬盘</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>云数据库</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>云数据库</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>批量计算</li><span>></span>
-                    </a>
-                    <a href="#">
-                        <li>容器服务</li><span>></span>
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </div>
+.header .wrapper {
+    display: flex;
+    padding-top: 29px;
+}
 
-    <!-- 中心区域 -->
-    <div class="center">
-        <div class="wrapper">
+/* logo 单击跳转首页,搜索引擎优化 */
+.logo a {
+    /* 行转块 */
+    display: block;
+    width: 195px;
+    height: 42px;
+    /* 设置链接字体大小为0隐藏 */
+    font-size: 0;
+    background-image: url(../images/logo.png);
+}
 
-        </div>
-    </div>
-</body>
+/* 导航 */
+.header .nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/* active 类选择器,默认选中的a  */
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.header .search {
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    /* 去除焦点框 */
+    outline: none;
+}
+
+/* ::placeholder 选中就是 placeholder 属性文字样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.search a {
+    /* 父级 search 已经flex a已经变成弹性盒子 加宽高直接生效 */
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    background-image: url(../images/search.png);
+}
+
+/* 用户区域 */
+.user {
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+.user img {
+    /* vertical-align 行内块和行内元素垂直方向对齐方式 */
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
+}
+
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+
+/* left 区域 */
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgb(0, 0, 0, 0.42);
+}
+
+.banner .left a {
+    /* 块级: 宽度默认是父级 left 宽度%100 */
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: white;
+}
+
+/* 悬停效果 */
+.banner .left a:hover {
+    background: url(../images/right-hover.png) no-repeat right center;
+    color: #00a4ff;
+}
+
+/* right区域 */
+.banner .right {
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    height: 48px;
+    line-height: 49px;
+    margin-left: 14px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.banner .right .contend {
+    height: 257px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.banner .contend dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right dd {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.banner .right dd span {
+    color: #00a4ff;
+}
+
+.banner .right dd strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right .contend a {
+    display: block;
+    background-color: #00a4ff;
+    height: 32px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-size: 14px;
+}
+
+/* 精品推荐区域 */
+.recommend {
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    display: flex;
+}
+
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.recommend ul {
+    /* 除去标题和 修改兴趣 的尺寸,父级剩余尺寸都给 ul,实现把 修改兴趣挤到盒子最后面 */
+    flex: 1;
+    display: flex;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    /* a 是行内 ,高度靠内容撑开 */
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.recommend ul li:last-child a {
+    border-right: 0;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* course 区域 */
+.course {
+    margin-top: 15px;
+}
+
+/* 标题 - 公共类 , 与其他区域共用 */
+.hd {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.hd .more {
+    font-size: 14px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+    padding-right: 20px;
+}
+
+/* 课程内容 - 公共类 */
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.bd li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.bd ul .img {
+    height: 156px;
+}
+
+.bd ul .text {
+    height: 115px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.bd li .text h4 {
+    height: 40px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.bd li .text p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    font-style: normal;
+}
+
+/* 前端 */
+.hd ul {
+    display: flex;
+}
+
+.hd ul li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd ul li .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+}
+
+.bd .right {
+    width: 957px;
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.footer {
+    height: 273px;
+    background-color: #fff;
+    margin-top: 60px;
+    padding-top: 60px;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    width: 440px;
+}
+
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    background-color: #fff;
+    color: #00a4ff;
+    border: solid 1px #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.footer .right {
+    display: flex;
+}
+
+.footer .right dl {
+    margin-left: 130px;
+}
+
+.footer .right dl dt {
+    height: 23px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer .right dl dd {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}

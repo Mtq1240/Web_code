@@ -38,7 +38,7 @@
     margin-top: 14px;
     font-size: 10px;
     color: white;
-    border-right: 1px solid white;
+    border-right: 2px solid white;
     line-height: 10px;
     padding-right: 9px;
     padding-left: 9px;
@@ -53,14 +53,14 @@
 }
 
 .listimg .wrapper .list {
-    width: 248px;
-    height: 479px;
+    width: 250px;
+    height: 480px;
     background-color: #1b2a3f;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .listimg .wrapper .list ul {
-    margin-top: 30px;
+    padding-top: 30px;
     margin-left: 19px;
     margin-right: 19px;
     margin-bottom: 50px;
@@ -81,14 +81,124 @@
     color: white;
 }
 
-/* canter区域 */
+/* center区域 */
 .center {
     background-color: #fff;
     height: 740px;
 }
 
 .center .wrapper {
-    background-color: #123;
-    margin: 0 auto;
+    /* background-color: #123; */
+    height: 140px;
+}
+
+.center .wrapper h1 {
+    font-size: 20px;
+    margin-bottom: 26px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.center .wrapper p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* 精品课程区域 */
+.center .wrapper .box {
     width: 1200px;
+    height: 462px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding-top: 45px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.left h2 {
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    font-size: 25px;
+    width: 100px;
+}
+
+.left span {
+    line-height: 30px;
+    font-size: 11px;
+    color: #666666;
+}
+
+.right img {
+    width: 580px;
+    height: 348px;
+    margin-right: 48px;
+    margin-left: 75px;
+}
+
+.left .a a {
+    display: inline-block;
+    padding: 14px 48px;
+    margin-top: 27px;
+    border: 2px solid #ffa500;
+    font-size: 14px;
+}
+
+/* 页脚区域 */
+.bottom {
+    height: 400px;
+    background-color: #2e3033;
+}
+
+.bottom .wrapper .left {
+    width: 865px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .wrapper .left dl {
+    padding-top: 33px;
+}
+
+.bottom .wrapper .left dl dt {
+    margin-bottom: 15px;
+    color: #eeeeee;
+    font-size: 12px;
+}
+
+.bottom .wrapper .left dl dd a {
+    line-height: 20px;
+    color: #cccccc;
+    font-size: 10px;
+}
+
+.bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .wrapper .right {
+    padding-top: 33px;
+    width: 190px;
+}
+
+.bottom .wrapper .right span {
+    color: #cccccc;
+    margin-bottom: 8px;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.bottom .wrapper .right .download {
+    margin-top: 22px;
+    display: block;
+    width: 190px;
+    height: 35px;
+    color: white;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 11px;
 }

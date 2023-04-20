@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>论坛列表</title>
+		<link href="css/bbs.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="bbs">
+			<header><span onclick="post()">我要发帖</span></header>
+			<section>
+				<ul id="postList">
+					<li>
+						<div>
+							<!-- <img src="images/o4.jpg"/> -->
+						</div>
+						<p>
+							
+						</p>
+					</li>
+				</ul>
+			</section>
+			<div class="post" id="post">
+				<input class="title" placeholder="请输入标题(1-50个字符)" id="title"/>
+				所属板块：<select id="sec">
+					<option>请选择板块</option>
+					<option>电子书籍</option>
+					<option>新课来了</option>
+					<option>新手报到</option>
+					<option>职业规划</option>
+				</select>
+				<textarea class="content" id="content"></textarea>
+				<input class="btn" value="发布" onclick="postSuccess()"/>
+			</div>
+		</div>
+		<script src="js/bbs.js"></script>
+	</body>
+</html>

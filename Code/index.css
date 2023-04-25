@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.touxiang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.touxiang a img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    /* 当鼠标悬停在元素上时，将元素放大 1.2 倍 */
+}
+
+.touxiang h1 {
+    color: red;
+    font-size: 48px;
+    font-style: italic;
+}
+
+.touxiang .search {
+    display: flex;
+    margin-top: 15px;
+    width: 750px;
+    height: 65px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    /* 去除焦点框 */
+    outline: none;
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+.search a {
+    font-size: 3.5em;
+    align-self: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: black;
+}

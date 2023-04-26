@@ -2,6 +2,8 @@ body {
     box-sizing: border-box;
     background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
 }
 
 * {
@@ -16,6 +18,35 @@ body {
     width: 1200px;
 }
 
+/* 导航区域 */
+.daohang ul {
+    display: flex;
+}
+
+.daohang ul li {
+    margin-top: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.daohang ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+ul li:last-child {
+    border-right: none;
+}
+
+.daohang ul li a:hover {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #FFF;
+}
+
+/* 头像区域 */
 .touxiang {
     display: flex;
     flex-direction: column;
@@ -43,6 +74,7 @@ body {
     font-style: italic;
 }
 
+/* 搜索区域 */
 .touxiang .search {
     display: flex;
     margin-top: 15px;
@@ -68,4 +100,121 @@ body {
     margin-right: 5px;
     margin-bottom: 5px;
     color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* banner区域 */
+.banner {
+    margin-top: 35px;
+    height: 500px;
+    background-image: url(images/daohang.png);
+    z-index: 2;
+}
+
+.introduce ul {
+    padding-top: 25px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.introduce ul li {
+    margin-left: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.introduce ul li:hover {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+}
+
+.introduce ul li a {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+/* 邓小平理论简介区域 */
+/* .dxp {
+    display: flex;
+} */
+
+.dxp a {
+    display: inline-block;
+    line-height: 30px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+.dxp a span:hover {
+    color: skyblue;
+}
+
+.dxp h1 {
+    font-size: 48px;
+    color: whitesmoke;
+    display: inline-block;
+}
+
+.dxp span {
+    padding: 8px;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.dxp p {
+    font-size: 26px;
+    color: silver;
+    display: block;
+    margin-top: 10px;
+}
+
+.dxp .p2 {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.xingtu h2 {
+    margin-top: 30px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.fangkuang {
+    padding: 15px;
+    border: 1px solid #E6E6E6;
+}
+
+.fangkuang a h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.fangkuang a h3:hover {
+    color: skyblue;
+}
+
+.fangkuang img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.fangkuang ul a li {
+    display: flex;
+}
+
+.fangkuang li p {
+    display: inline-block;
+    height: 30px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 30px;
 }

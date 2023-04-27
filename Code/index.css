@@ -84,6 +84,7 @@ ul li:last-child {
     border-radius: 50px;
 }
 
+/* 搜索框区域 */
 .search input {
     flex: 1;
     border: 0;
@@ -103,15 +104,35 @@ ul li:last-child {
     transition: transform 0.3s ease-in-out;
 }
 
+.search a img {
+    width: 60px;
+    height: 60px;
+}
+
 /* banner区域 */
 .banner {
     margin-top: 35px;
-    height: 500px;
+    height: 600px;
     background-image: url(images/daohang.png);
     z-index: 2;
 }
 
+.introduce {
+    display: flex;
+}
+
+.introduce p {
+    display: inline;
+    padding-left: 16px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-top: 25px;
+}
+
 .introduce ul {
+    /* margin-left: 100px; */
+    margin-bottom: 30px;
     padding-top: 25px;
     width: 100%;
     height: 60px;
@@ -190,6 +211,10 @@ ul li:last-child {
     border: 1px solid #E6E6E6;
 }
 
+.fangkuang a {
+    display: inline-block;
+}
+
 .fangkuang a h3 {
     display: block;
     width: 100%;
@@ -205,10 +230,13 @@ ul li:last-child {
     width: 70px;
     height: 70px;
     margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .fangkuang ul a li {
+    margin-right: 15px;
     display: flex;
+    width: 240px;
 }
 
 .fangkuang li p {
@@ -217,4 +245,12 @@ ul li:last-child {
     color: whitesmoke;
     text-align: center;
     line-height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fangkuang ul a li span {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(237, 237, 237);
 }

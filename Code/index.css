@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     background-image: url(images/bg.jpg);
@@ -152,7 +156,7 @@ ul li:last-child {
 }
 
 .introduce ul li {
-    margin-left: 30px;
+    margin-left: 26px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -285,8 +289,9 @@ ul li:last-child {
 }
 
 .jianjie .wrapper .left {
+    margin-bottom: 50px;
     line-height: 40px;
-    margin-bottom: 25px;
+    margin-left: 80px;
 }
 
 .jianjie .wrapper dt {
@@ -297,7 +302,7 @@ ul li:last-child {
 .jianjie .wrapper dd {
     padding-left: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     width: 39%;
 }
 
@@ -307,5 +312,143 @@ ul li:last-child {
 
 .jianjie .wrapper dl dt,
 dd {
+    border-bottom: 2px dashed #a5a3a3;
     display: inline-block;
+}
+
+/* 内容区域 */
+.content {
+    background-color: #BD1A2D;
+}
+
+.content .wrapper .one {
+    display: flex;
+    flex-direction: row;
+}
+
+.one span {
+    flex: 1;
+    border: none;
+    padding-top: 16px;
+    margin-left: 10px;
+}
+
+.one span .line {
+    border-top: 1px solid #a5a3a3;
+
+}
+
+.one .duanluo {
+    color: #fff;
+    border-left: 16px solid #000;
+    padding-left: 10px;
+}
+
+.content .wrapper .text {
+    padding-bottom: 30px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.text p {
+    line-height: 30px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.text p a {
+    color: rgb(0, 234, 255);
+}
+
+.text p a:hover {
+    border-bottom: 1px solid #0EDAEF;
+}
+
+.text img {
+    width: 500px;
+    height: 200px;
+}
+
+.text .ssqs {
+    width: 500px;
+    height: 300px;
+}
+
+.textimg {
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    background-image: url(images/tiananmen.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top: -20px;
+    margin-left: 1px;
+}
+
+.text .p .strong {
+    color: darkgray;
+    font-weight: bold;
+}
+
+.content .wrapper .bgi {
+    background-image: url(images/beijing.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+}
+
+.content .wrapper .bgi .p p img {
+    float: left;
+}
+
+.content .wrapper .text .p p .pic2 {
+    float: right;
+}
+
+/* 版权区域 */
+.banquan {
+    width: 1690px;
+    height: 130px;
+    background-image: url(images/body_bg_2020\(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banquan .wrapper p {
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+    opacity: 0.75;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+
+.xiazai {
+    text-align: center;
+}
+
+.xiazai a {
+    color: #3D3F40;
+    margin-top: 10px;
+    letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+    opacity: 0.75;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.xiazai a:hover {
+    transition: transform 0.3s ease-in-out;
+    color: #0099ff;
+    border: 1px solid #0099ff;
+}
+
+.banquan .wrapper p {
+    color: #3D3F40;
+    transition: transform 0.3s ease-in-out;
 }

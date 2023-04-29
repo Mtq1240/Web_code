@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邓小平理论</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            box-sizing: border-box;
+            background-image: url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: 1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        /* 导航区域 */
+        .daohang ul {
+            display: flex;
+        }
+
+        .daohang ul li {
+            margin-top: 20px;
+            line-height: 20px;
+            margin-left: 20px;
+            border-right: 2px solid white;
+            padding-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .daohang ul li a {
+            color: white;
+            font-size: 18px;
+        }
+
+        .daohang ul li a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .daohang ul li a span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -22px;
+            margin-left: 5px;
+        }
+
+        ul li:last-child {
+            border-right: none;
+        }
+
+        .daohang ul li a:hover {
+            padding-bottom: 7px;
+            border-bottom: 2px solid #FFF;
+        }
+
+        /* 头像区域 */
+        .touxiang {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .touxiang a img {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            width: 200px;
+            height: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover:hover {
+            transform: scale(1.1);
+            /* 当鼠标悬停在元素上时，将元素放大 1.2 倍 */
+        }
+
+        .touxiang h1 {
+            color: red;
+            font-size: 48px;
+            font-style: italic;
+        }
+
+        /* 搜索区域 */
+        .touxiang .search {
+            display: flex;
+            margin-top: 15px;
+            width: 750px;
+            height: 65px;
+            border: 3px solid black;
+            border-radius: 50px;
+        }
+
+        /* 搜索框区域 */
+        .search input {
+            flex: 1;
+            border: 0;
+            background-color: transparent;
+            /* 去除焦点框 */
+            outline: none;
+            font-size: 32px;
+            margin-left: 15px;
+        }
+
+        .search a {
+            font-size: 3.5em;
+            align-self: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .search a img {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* banner区域 */
+        .banner {
+            margin-top: 35px;
+            height: 600px;
+            background-image: url(images/daohang.png);
+            z-index: 2;
+        }
+
+        .introduce {
+            display: flex;
+        }
+
+        .introduce p {
+            display: inline;
+            padding-left: 16px;
+            width: 120px;
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+            margin-top: 25px;
+        }
+
+        .introduce ul {
+            /* margin-left: 100px; */
+            margin-bottom: 30px;
+            padding-top: 25px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+        }
+
+        .introduce ul li {
+            margin-left: 26px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .introduce ul li:hover {
+            padding-bottom: 7px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .introduce ul li a {
+            color: white;
+            font-size: 23px;
+            text-align: center;
+        }
+
+        /* 邓小平理论简介区域 */
+        /* .dxp {
+            display: flex;
+        } */
+
+        .dxp a {
+            display: inline-block;
+            line-height: 30px;
+            transition: transform 0.3s ease-in-out;
+            margin-left: 20px;
+            padding-bottom: 20px;
+            margin-top: 5px;
+            vertical-align: top;
+        }
+
+        .dxp a span img {
+            width: 25px;
+            height: 23px;
+            vertical-align: middle;
+            padding-bottom: 5px;
+        }
+
+        .dxp a span:hover {
+            color: skyblue;
+        }
+
+        .dxp h1 {
+            font-size: 48px;
+            color: whitesmoke;
+            display: inline-block;
+        }
+
+        .dxp span {
+            padding: 8px;
+            color: whitesmoke;
+            font-size: 18px;
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+        }
+
+        .dxp p {
+            font-size: 26px;
+            color: silver;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .dxp .p2 {
+            font-size: 16px;
+            color: whitesmoke;
+        }
+
+        .xingtu h2 {
+            margin-top: 30px;
+            color: whitesmoke;
+            margin-bottom: 15px;
+        }
+
+        .fangkuang {
+            padding: 15px;
+            border: 1px solid #E6E6E6;
+        }
+
+        .fangkuang a {
+            display: inline-block;
+        }
+
+        .fangkuang a h3 {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .fangkuang a h3:hover {
+            color: skyblue;
+        }
+
+        .fangkuang img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fangkuang ul a li {
+            margin-right: 15px;
+            display: flex;
+            width: 240px;
+        }
+
+        .fangkuang li p {
+            display: inline-block;
+            height: 30px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fangkuang ul a li span {
+            display: block;
+            font-style: italic;
+            font-size: 12px;
+            color: rgb(237, 237, 237);
+        }
+
+        /* 简介区域 */
+        .jianjie {
+            background-color: #BD1A2D;
+        }
+
+        .jianjie .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .jianjie .wrapper .left {
+            margin-bottom: 50px;
+            line-height: 40px;
+            margin-left: 80px;
+        }
+
+        .jianjie .wrapper dt {
+            color: #a5a3a3;
+            font-size: 20px;
+        }
+
+        .jianjie .wrapper dd {
+            padding-left: 20px;
+            color: white;
+            font-size: 20px;
+            width: 39%;
+        }
+
+        .jianjie .wrapper .left .time {
+            width: 37.4%;
+        }
+
+        .jianjie .wrapper dl dt,
+        dd {
+            border-bottom: 2px dashed #a5a3a3;
+            display: inline-block;
+        }
+
+        /* 内容区域 */
+        .content {
+            background-color: #BD1A2D;
+        }
+
+        .content .wrapper .one {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one span {
+            flex: 1;
+            border: none;
+            padding-top: 16px;
+            margin-left: 10px;
+        }
+
+        .one span .line {
+            border-top: 1px solid #a5a3a3;
+
+        }
+
+        .one .duanluo {
+            color: #fff;
+            border-left: 16px solid #000;
+            padding-left: 10px;
+        }
+
+        .content .wrapper .text {
+            padding-bottom: 30px;
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .text p {
+            line-height: 30px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .text p a {
+            color: rgb(0, 234, 255);
+        }
+
+        .text p a:hover {
+            border-bottom: 1px solid #0EDAEF;
+        }
+
+        .text img {
+            width: 500px;
+            height: 200px;
+        }
+
+        .text .ssqs {
+            width: 500px;
+            height: 300px;
+        }
+
+        .textimg {
+            display: inline-block;
+            width: 220px;
+            height: 150px;
+            background-image: url(images/tiananmen.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-top: -20px;
+            margin-left: 1px;
+        }
+
+        .text .p .strong {
+            color: darkgray;
+            font-weight: bold;
+        }
+
+        .content .wrapper .bgi {
+            background-image: url(images/beijing.png);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+
+        }
+
+        .content .wrapper .bgi .p p img {
+            float: left;
+        }
+
+        .content .wrapper .text .p p .pic2 {
+            float: right;
+        }
+
+        /* 版权区域 */
+        .banquan {
+            width: 1690px;
+            height: 130px;
+            background-image: url(images/body_bg_2020\(1\).png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .banquan .wrapper p {
+            padding-top: 10px;
+            text-align: center;
+            letter-spacing: 0.2rem;
+            font-size: 0.6rem;
+            opacity: 0.75;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+
+        .xiazai {
+            text-align: center;
+        }
+
+        .xiazai a {
+            color: #3D3F40;
+            margin-top: 10px;
+            letter-spacing: 0.2rem;
+            font-size: 0.6rem;
+            opacity: 0.75;
+            text-align: center;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        .xiazai a:hover {
+            transition: transform 0.3s ease-in-out;
+            color: #0099ff;
+            border: 1px solid #0099ff;
+        }
+
+        .banquan .wrapper p {
+            color: #3D3F40;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="daohang">
+        <ul>
+            <li class="hover"><a href="示例.html" class="user" target="_blank"><img src="images/user.png"
+                        alt=""><span>个人中心</span></a>
+            </li>
+            <li class="hover"><a href="index.html" class="shouye" target="_blank"><img src="images/首页.png"
+                        alt=""><span>首页</span></a>
+            </li>
+            <li class="hover"><a href="示例.html" class="pinglun" target="_blank"><img src="images/评论.png"
+                        alt=""><span>消息</span></a>
+            </li>
+            <li class="hover"><a href="示例.html" class="shezhi" target="_blank"><img src="images/设置_管理.png"
+                        alt=""><span>设置</span></a>
+            </li>
+            <li class="hover"><a href="示例.html" class="gengduo" target="_blank"><img src="images/更多.png"
+                        alt=""><span>更多</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="wrapper">
+            <div class="touxiang">
+                <a href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3/116181?fr=aladdin"
+                    target="_blank"><img src="images/dxp.jpeg" class="hover" title="点击了解邓小平"></a>
+                <h1>邓小平理论</h1>
+                <p>Deng Xiaoping Theory</p>
+                <div class="search">
+                    <input type="text" placeholder="搜索你想要的内容 ( 待完善 )">
+                    <a href="#" class="hover"><img src="images/搜索.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中心区域 -->
+    <div class="banner">
+        <div class="introduce">
+            <p>内容目录 :</p>
+            <nav>
+                <ul>
+                    <li class="hover"><a href="#section1">理论提出</a></li>
+                    <li class="hover"><a href="#section2">理论实质</a></li>
+                    <li class="hover"><a href="#section3">历史背景</a></li>
+                    <li class="hover"><a href="#section4">形成过程</a></li>
+                    <li class="hover"><a href="#section5">主要内容</a></li>
+                    <li class="hover"><a href="#section6">历史地位</a></li>
+                    <li class="hover"><a href="#section7">指导意义</a></li>
+                    <li class="hover"><a href="#section8">学习和实践</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="wrapper">
+            <div class="dxp">
+                <h1>邓小平理论</h1>
+                <a href="#" class="hover"><span><img src="images/扬声器.png" alt="">播报</span></a>
+                <p>马克思主义中国化的一大理论成果</p>
+                <p class="p2">邓小平理论，是以邓小平为主要创立者、以建设有中国特色社会主义为主题的理论。邓小平理论是马克思主义中国化的一大理论成果，是中国共产党获得的与苏联模式不同的社会主义建设经验的理论总结。
+                </p>
+            </div>
+            <div class="xingtu">
+                <h2>相关星图</h2>
+                <div class="fangkuang">
+                    <a
+                        href="https://baike.baidu.com/starmap/view?nodeId=efb5598df2fda49a810a7266&lemmaTitle=%E9%82%93%E5%B0%8F%E5%B9%B3%E7%90%86%E8%AE%BA&lemmaId=1478104&starMapFrom=lemma_starMap&fromModule=lemma_starMap">
+                        <h3>中国共产党指导思想 ></h3>
+                    </a>
+                    <ul><a target="_blank"
+                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%88%97%E5%AE%81%E4%B8%BB%E4%B9%89/9153690?lemmaFrom=lemma_starMap&fromModule=lemma_starMap">
+                            <li><img src="images/mkslnzy.png" alt="" class="hover">
+                                <p class="hover">马克思列宁主义<span>马克思列宁主义 (...</span></p>
+                            </li>
+                        </a>
+                        <a target="_blank"
+                            href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3/385875?lemmaFrom=lemma_starMap&fromModule=lemma_starMap">
+                            <li><img src="images/mzdsximg.jpg" alt="" class="hover">
+                                <p class="hover"> 毛泽东思想<span>毛泽东思想是马克...</span></p>
+                            </li>
+                        </a>
+                        <a target="_blank"
+                            href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3%E7%90%86%E8%AE%BA/1478104?lemmaFrom=lemma_starMap&fromModule=lemma_starMap">
+                            <li><img src="images/mzdsx.png" alt="" class="hover">
+                                <p class="hover"> 邓小平理论<span>邓小平理论,是以...</span></p>
+                            </li>
+                        </a>
+                        <a target="_blank"
+                            href="https://baike.baidu.com/item/%E2%80%9C%E4%B8%89%E4%B8%AA%E4%BB%A3%E8%A1%A8%E2%80%9D%E9%87%8D%E8%A6%81%E6%80%9D%E6%83%B3/2523227?lemmaFrom=lemma_starMap&fromModule=lemma_starMap">
+                            <li><img src="images/sgdb.jpeg" alt="" class="hover">
+                                <p class="hover">"三个代表"重要...<span>江泽民同志2000年...</span></p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 简介区域 -->
+    <div class="jianjie">
+        <div class="wrapper">
+            <dl class="left">
+                <dt>中文名:</dt>
+                <dd>邓小平理论</dd>
+                <dt>意识形态:</dt>
+                <dd>社会主义政治理论</dd>
+                <dt>提出者:</dt>
+                <dd>邓小平</dd>
+                <dt>性&nbsp&nbsp质:</dt>
+                <dd>马克思主义中国化</dd>
+                <dt>提出时间:</dt>
+                <dd class="time">1978年十一届三中全会后</dd>
+                <dt>意&nbsp&nbsp义:</dt>
+                <dd>指导中国特色社会主义建设</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- 目录内容区域 -->
+    <div class="content">
+        <div class="wrapper">
+            <div class="one">
+                <h2 class="duanluo" id="section1">理论提出</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;根据中国共产党的官方定义，<strong> 邓小平理论 </strong>是以<a
+                            href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3?fromModule=lemma_inlink"> 邓小平
+                        </a>为主要创立者、以建设有<a
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89/929612?fromModule=lemma_inlink">中国特色社会主义</a>为主题的理论。邓小平理论被中国共产党看作是<a
+                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E4%B8%AD%E5%9B%BD%E5%8C%96?fromModule=lemma_inlink">马克思主义中国化</a>的一大理论成果，是中国共产党获得的与<a
+                            href="https://baike.baidu.com/item/%E8%8B%8F%E8%81%94%E6%A8%A1%E5%BC%8F?fromModule=lemma_inlink">苏联模式</a>不同的社会主义建设经验的理论总结.
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;这一理论<strong> 主要体现 </strong>在1978年中共<a
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE/2087177?fromModule=lemma_inlink&fromtitle=%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=390224">十一届三中全会</a>之后邓小平的各种讲话、报告与会议决议之中。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1997年9月中共十五大把“<strong> 邓小平建设有中国特色社会主义理论 </strong>”直接称为“<strong> 邓小平理论
+                        </strong>”，由此得名。该会议上邓小平理论被写入<a
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AB%A0%E7%A8%8B/383972?fromModule=lemma_inlink&fromtitle=%E5%85%9A%E7%AB%A0&fromid=680564">党章</a>中,成为其指导思想之一。
+                    </p>
+                </div>
+                <img src="images/dxp.jpeg" alt="" title="邓小平同志">
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section2">理论实质</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论是一场以“实事求是”为精神实质的思想解放运动过程中产生或引用的旨在打破精神<a
+                            href="https://baike.baidu.com/item/%E6%A1%8E%E6%A2%8F?fromModule=lemma_inlink">桎梏</a>，促进社会主义经济和社会发展的一系列指导思想的总汇。邓小平理论与中国在80年代施行的改革开放政策密不可分。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;不过邓小平理论被一些过“左”思想或<a
+                            href="https://baike.baidu.com/item/%E6%95%99%E6%9D%A1%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">教条主义</a>的认识和运用马克思主义的社会主义国家称为<a
+                            href="https://baike.baidu.com/item/%E4%BF%AE%E6%AD%A3%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">修正正义</a>理论，他们指责邓小平理论的其政策是剥削无产阶级，使资产阶级兴起。问题在于改革纯“<strong>公有制</strong>”的生产关系融入“<strong>私有制</strong>”，从高度集中的计划经济转变为市场经济，进而达到解放生产力和发展生产力的目的。这正是邓小平理论的根本。当然也要保证公有制的生产关系和以马克思主义为指导的意识形态必须自始至终占有统治地位。要坚持<a
+                            href="https://baike.baidu.com/item/%E5%9B%9B%E9%A1%B9%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99?fromModule=lemma_inlink">四项基本原则</a>，保证国家不会和平演变成资本主义，要反对<a
+                            href="https://baike.baidu.com/item/%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E8%87%AA%E7%94%B1%E5%8C%96?fromModule=lemma_inlink">资产阶级自由化</a>及其思想。
+                    </p>
+                </div>
+                <img src="images/ssqs.jpg" alt="" class="ssqs" title="实事求是">
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section3">历史背景</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;一种科学理论的诞生，是有其历史背景和时代条件的。邓小平理论所以能够出现在当代中国，也是有着深刻原因的。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论，是<a
+                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%88%97%E5%AE%81%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">马克思列宁主义</a>同当代中国实际相结合的产物，是<a
+                            href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3?fromModule=lemma_inlink">毛泽东思想</a>的继承<span
+                            class="textimg"></span>和发展。伟大领袖毛泽东同志和其他老一辈革命家，早就发现<a
+                            href="https://baike.baidu.com/item/%E8%8B%8F%E8%81%94%E6%A8%A1%E5%BC%8F?fromModule=lemma_inlink">苏联模式</a>的某些弊端，他们在寻找一条适合我国国情的建设社会主义道路过程中，曾经做出过许多努力，提出过许多好的思想。邓小平理论继承了这些思想和观点，逐步形成了理论体系。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;马克思主义产生于19世纪40年代，是资本主义矛盾激化和工人运动发展的产物。以<a
+                            href="https://baike.baidu.com/item/%E5%85%B1%E4%BA%A7%E5%85%9A%E5%AE%A3%E8%A8%80/361439?fromModule=lemma_inlink">《共产党宣言》</a>的问世为标志。它吸收和改造了人类思想文化的一切优秀成果，特别是18世纪中叶和19世纪上半叶的社会科学和自然科学的成果。它的主要理论来源是<a
+                            href="https://baike.baidu.com/item/%E5%BE%B7%E5%9B%BD%E5%8F%A4%E5%85%B8%E5%93%B2%E5%AD%A6?fromModule=lemma_inlink">德国古典哲学、英国古典政治经济学</a>和英法<a
+                            href="https://baike.baidu.com/item/%E7%A9%BA%E6%83%B3%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">空想社会主义</a>。此外，法国启蒙学者的思想和法国复辟时期历史学家的阶级斗争学说，也为科学社会主义理论提供了有益的思想资料。19世纪科学技术的新成果，特别是细胞学说的确立，能量守恒和转化规律的发现、进化论的新发展为马克思主义的产生奠定了坚实的自然科学基础。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论是党在继承马克思主义和毛泽东思想的基础上结合中国实践的时代特征提出来的理论观点。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十五大报告指出：邓小平理论“是在和平与发展成为时代主题的历史条件下，在我国改革开放和现代化建设的实践中，在总结我国社会主义胜利和挫折的历史经验并借鉴其他社会主义国家兴衰成败历史经验的基础上，逐步形成和发展起来的。”这是对邓小平理论形成与发展的高度概括。
+                        和平与发展已经成为当今时代的两大主题。发生世界大战的可能性越来越小，世界上所有的国家，不论是发展中国家，还是发达国家，不论是社会主义国家，还是资本主义国家，都在谋求更快的发展。这是社会主义与资本主义两种制度的竞赛；也是一个国家能否在世界上站稳脚跟，处于有利位置的竞赛。在这种历史条件下，我们这样一个经济文化都比较落后的社会主义大国，必须尽快发展起来。这就要求有一种能够指引我们更快更好地发展，不断走向胜利的理论。党的十一届三中全会以来，在改革开放和社会主义现代化建设的实践中，不断创造出许多新经验和新事物，这些，就是产生邓小平理论的源泉。可以说，如果没有改革开放和现代化建设的实践，就不可能形成邓小平理论。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;我国社会主义胜利和挫折的历史经验，以及其他国家社会主义兴衰成败的历史经验，也为邓小平理论的形成提供了重要的历史借鉴，它使我们从正反两个方面加深了对社会主义规律的认识。这种认识是付出了很大代价换来的，对于形成正确的理论是十分珍贵的。
+                    </p>
+
+                </div>
+                <!-- <img src="images/dxp.jpeg" alt=""> -->
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section4">形成过程</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text bgi">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;中国共产党将该理论的形成分为四个阶段：</p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;1978-1982年为基本理论命题提出的阶段；</p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;1982-1987年为理论形成基本轮廓的时期；</p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;1987-1992年为理论走向成熟，确立体系的时期；</p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;1992-1997年为理论进一步丰富和发展的时期。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论从形成到发展，经历了一个不断深化的过程，大体可分为四个阶段：</p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;理论的准备和初步提出的阶段</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十一届三中全会到党的十二大前夕，是这一理论的准备和初步提出的阶段。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1976年粉碎“四人帮”的胜利，把我们党和国家从危难中拯救出来。但是，“文化大革命”带来的政治、思想文化、经济方面的后遗症还很严重，国家的社会政治经济生活还未走上正确的轨道，百废待兴。为了清除“左”的思想影响，党领导和支持了关于实践是检验真理唯一标准的讨论。通过这场讨论，我们党从“两个凡是”的束缚中摆脱出来。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;十一届三中全会就是在这样的历史背景下召开的。这次会议冲破了教条主义和个人崇拜的严重束缚，重新确立了解放思想、实事求是的思想路线；果断停止使用“以阶级斗争为纲”的口号，作出了把工作重点转移到社会主义现代化建设上来的战略决策；适应社会主义现代化建设发展的需要，提出了在党和国家工作的各个方面进行改革的任务；并针对拨乱反正过程中出现的错误思潮。旗帜鲜明地强调必须坚持社会主义道路，坚持人民民主专政，坚持中国共产党的领导，坚持马克思列宁主义、毛泽东思想。“一个中心、两个基本点”的思想开始形成，奠定了新时期党的基本路线的基础。
+                        <img src="images/pict1.gif" alt="">
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1981年党的十一届六中全会作出的《关于建国以来党的若干历史问题的决议》，标志着党在指导思想上拨乱反正的胜利完成。决议在系统总结三十二年正反两方面经验的基础上，提出了适合我国情况的社会主义现代化建设正确道路的十点经验。这十点经验，成为邓小平理论的雏形。
+                    </p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;理论初步形成的阶段</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平同志在党的十二大开幕词中，第一次提出和使用了“建设有中国特色的社会主义”的科学概念。党的十二大报告系统概括了社会主义社会的基本特征，并从中国国情出发，确定了以经济建设为中心，“现代化”、“高度民主”、“高度文明”三位一体，经济、政治、思想文化三大建设一起抓的总路线和总任务。在坚持四项基本原则的同时，改革开放在全国蓬勃发展起来，成为党和国家长期坚持的战略方针和基本国策。党的十二大以后，邓小平理论的基本框架逐步形成。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1984年党的十二届三中全会通过的《中共中央关于经济体制改革的决定》，第一次提出我国社会主义经济是公有制基础上的有计划的商品经济的观点，突破了把计划经济同商品经济对立起来的传统观念，是对马克思主义政治经济学的新发展。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1986年党的十二届六中全会通过的《中共中央关于社会主义精神文明建设指导方针的决议》，突出强调了社会主义精神文明是社会主义社会的重要特征，强调实行物质文明和精神文明两手抓的方针，从而使建设有中国特色社会主义的含义更加全面。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1987年党的十三大系统阐述了邓小平理论的基本轮廓，明确提出我国处于社会主义初级阶段，概括和全面阐述了党的“一个中心、两个基本点”的基本路线，确定了建设有中国特色社会主义的六条具有长远意义的指导方针，并明确提出了我国现代化建设“三步走”的战略目标。至此，我们党已经对建设有中国特色社会主义的理论有了比较充分的论述，标志着邓小平理论的初步形成。
+                    </p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;理论的进一步发展和丰富的阶段</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1990年党的十三届七中全会通过的《中共中央关于制定国民经济和社会发展十年规划和“八五”计划的建议》中，首次对建设有中国特色社会主义的基本理论和基本实践概括了十二条原则，系统地阐明了这一理论的主要内容。这十二条原则表明，我们党对社会主义的认识进入了一个新阶段。
+                        <img src="images/pict5.gif" alt="" class="pic2">
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1991年江泽民同志在中国共产党成立七十周年大会上的讲话，又在十二条原则的基本建设中包含中国特色社会主义的理论。特别是邓小平同志1992年初视察南方的重要谈话，科学地总结了十一届三中全会以来党的基本实践经验，鲜明地回答了经常困扰和束缚人们思想的许多重大思想理论问题，从而使邓小平理论的主线和轮廓更加清晰。这个谈话是对社会主义认识的新飞跃，是科学社会主义理论的新发展。在邓小平同志视察南方重要谈话精神的指导下，党的十四大报告从更宽广的视野和更高的理论层次，对邓小平建设有中国特色社会主义理论进一步作出科学的概括。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1993年11月，党的十四届三中全会通过了《关于建立社会主义市场经济体制若干问题的决定》。这个决定把建立社会主义市场经济体制的基本原则加以系统化、具体化，提出了清晰的基本框架和实现的总体规划，不仅使我们有了进行经济体制改革的行动纲领，而且对进一步丰富邓小平理论做出了重大贡献。
+                    </p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;理论正式确立命名的阶段</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十五大是邓小平理论正式确立命名的阶段。党的十五大明确提出和使用了邓小平理论的科学概念，进一步阐明了邓小平理论是马克思主义在中国发展的新阶段，并且把邓小平理论确立为党的指导思想，明确写进了党章。这标志着邓小平理论的正式确立和命名。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;从以上的历史回顾可以看出，我们党能够形成邓小平理论，是来之不易的，它是我们党在马克思主义基本原理的指引下，领导亿万人民进行社会主义革命和建设的实践经验的科学总结，是引导我国社会主义事业不断前进的行动指南，我们必须倍加珍惜。
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section5">主要内容</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论是当代中国的马克思主义，是马克思主义在中国发展的新阶段。这个理论之所以能够成为马克思主义在中国发展的新阶段，是因为：第一，邓小平理论坚持解放思想、实事求是，在新的实践基础上继承前人又突破陈规，开拓了马克思主义的新境界。第二，邓小平理论坚持科学社会主义理论和实践的基本成果，抓住“什么是社会主义，怎样建设社会主义”这个根本问题，深刻地揭示社会主义的本质，把对社会主义的认识提高到新的科学水平。第三，邓小平理论坚持用马克思主义的宽广眼界观察世界，对当今时代特征和总体国际形势，对世界上其他社会主义国家的成败，发展中国家谋求发展的得失，发达国家发展的态势和矛盾，进行正确分析，作出了新的科学判断。第四，总起来说，邓小平理论形成了新的建设有中国特色社会主义理论的科学体系。
+                    </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论第一次比较系统地初步围绕“什么是社会主义，怎样建设社会主义”这个根本问题回答了中国社会主义的发展道路、发展阶段、根本任务、发展动力、外部条件、政治保证、战略步骤、党的领导和依靠力量以及祖国统一等一系列基本问题，指导我们党制定了在社会主义初级阶段的基本路线。它是贯通哲学、政治经济学、科学社会主义等领域，涵盖经济、政治、科技、教育、文化、民族、军事、外交、统一战线、党的建设等方面比较完备的科学体系，又是需要从各方面进一步丰富发展的科学体系。
+                    </p>
+                </div>
+                <img src="images/pict3.gif" alt="">
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section6">历史地位</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十一届三中全会后，在邓小平理论这一当代中国的马克思主义形成和发展过程中，全党越来越认识到，它是我们党领导改革开放和现代化建设的指导思想。党十三大的报告明确指出，建设有中国特色的社会主义理论是全党同志和全国人民统一认识、增强团结的思想基础，是指引我们事业前进的伟大旗帜。党的十四大提出了坚持用邓小平同志建设有中国特色社会主义的理论武装全党的战略任务，并在党章中规定这一理论是“引导我国社会主义事业不断发展的指针”。党的十五大把邓小平理论确立为党的指导思想，并把这一理论同马克思列宁主义、毛泽东思想一起作为自己的行动指南写入党章。
+                    </p>
+                </div>
+                <img src="images/dangzhang.jpg" alt="">
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section7">指导意义</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;对中国社会主义建设规律的科学认识</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论坚持和发展了毛泽东思想，是马克思主义在中国发展的新阶段。它坚持解放思想、实事求是，在新的实践基础上继承前人又突破陈规，它开拓了马克思主义的新境界。
+                    </p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;改革开放和社会主义现代化建设的科学指南</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十一届三中全会以来，邓小平理论指引我们进行拨乱反正和全面改革，逐步实现了从“以阶级斗争为纲”到以经济建设为中心、从封闭半封闭到改革开放、从计划经济到社会主义市场经济等一系列重大转变，使我国实现政治稳定，经济发展，民族团结，社会生产力、综合国力和人民生活都上了一个大台阶，成功地走出了一条具有中国特色的社会主义新道路。
+                    </p>
+                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;党和国家必须长期坚持的指导思想</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;今天我们推进中国特色社会主义的伟大事业，仍然要继续围绕什么是社会主义、怎样建设社会主义这个首要的基本的理论问题，紧紧抓住实事求是的思想路线，不断推进思想的解放；紧紧抓住和深入领会“两手抓，两手都要硬”的基本方针，推动经济社会的全面发展；贯彻执行“一个中心、两个基本点”的基本路线；紧紧抓住和领会社会主义初级阶段的理论。努力完成分“三步走”基本实现现代化的战略任务等等。这些根本性的指针，关系到中国特色社会主义的命运和前途，我们不能有任何动摇。
+                    </p>
+
+                </div>
+                <img src="images/zdyy.jpg" alt="">
+            </div>
+
+            <div class="one">
+                <h2 class="duanluo" id="section8">学习与实践</h2>
+                <span>
+                    <hr class="line">
+                </span>
+            </div>
+            <div class="text">
+                <div class="p">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;要紧密结合经济建设、精神文明建设和党的建设的实际，结合当前的形势和任务，提高分析问题和解决问题的能力。要联系改革开放以来的经历，联系思想实际和工作实际，总结经验教训，澄清模糊认识，以增强在党的基本理论和基本路线基础上的团结和统一，增强党的凝聚力和战斗力。要把学习邓小平理论同改造世界观、增强党性结合起来。用邓小平理论武装头脑，最重要的就是联系改造自己的世界观和人生观。对于共产党员和要求入党的同志来说，树立正确的世界观、人生观和价值观，是十分重要的问题。学习邓小平理论，必须结合自己的思想实际，用贯穿于这一理论的马克思主义世界观和方法论来克服和抵御唯心论、机械唯物论、主观主义、形而上学以及极端个人主义等非马克思主义思想的侵蚀，增强党性观念，坚定理想信念，提高理论素质和政治水平，加快成熟，尽早成为工人阶级的先锋战士。
+                    </p>
+                </div>
+                <img src="images/xxhsj.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权区域 -->
+    <div class="banquan">
+        <div class="xiazai"><a href="" class="hover">点击查看/下载源码-1240189611@qq.com</a></div>
+        <div class="wrapper">
+            <p>Copyright&nbsp;©&nbsp;2023 - 2xxx&nbsp;- MTQ
+                <br>
+                All&nbsp;Rights&nbsp;Reserved
+            </p>
+            <p class="hover"><a href="">Signature&nbsp;:&nbsp;希望你每个昨天,今天,明天&nbsp;都能快乐</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

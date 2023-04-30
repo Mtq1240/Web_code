@@ -406,7 +406,39 @@ dd {
     float: right;
 }
 
+.content .wrapper .text .p p .gugong {
+    float: left;
+}
+
 /* 版权区域 */
+.banquan .luoqiao {
+    margin-top: 20px;
+    display: flex;
+    float: left;
+    align-items: center;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+    opacity: 0.75;
+    padding-left: 20px;
+    color: #a5a3a3;
+}
+
+.luoqiao:hover {
+    text-decoration: underline;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banquan .luoqiao img {
+    border-radius: 50%;
+    /* padding-right: 10px; */
+    width: 50px;
+    height: 50px;
+}
+
+
 .banquan {
     width: 1690px;
     height: 130px;
@@ -416,7 +448,7 @@ dd {
 }
 
 .banquan .wrapper p {
-    padding-top: 10px;
+    padding-top: 8px;
     text-align: center;
     letter-spacing: 0.2rem;
     font-size: 0.6rem;
@@ -427,7 +459,8 @@ dd {
 
 
 .xiazai {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 39.5%;
 }
 
 .xiazai a {
@@ -446,6 +479,8 @@ dd {
     transition: transform 0.3s ease-in-out;
     color: #0099ff;
     border: 1px solid #0099ff;
+    text-decoration: underline;
+    text-decoration-color: #a5a3a3;
 }
 
 .banquan .wrapper p {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>邓小平理论</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
     <style>
         html {
@@ -417,7 +417,39 @@
             float: right;
         }
 
+        .content .wrapper .text .p p .gugong {
+            float: left;
+        }
+
         /* 版权区域 */
+        .banquan .luoqiao {
+            margin-top: 20px;
+            display: flex;
+            float: left;
+            align-items: center;
+            border: 0;
+            width: 200px;
+            height: 30px;
+            letter-spacing: 0.2rem;
+            font-size: 0.6rem;
+            opacity: 0.75;
+            padding-left: 20px;
+            color: #a5a3a3;
+        }
+
+        .luoqiao:hover {
+            text-decoration: underline;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .banquan .luoqiao img {
+            border-radius: 50%;
+            /* padding-right: 10px; */
+            width: 50px;
+            height: 50px;
+        }
+
+
         .banquan {
             width: 1690px;
             height: 130px;
@@ -427,7 +459,7 @@
         }
 
         .banquan .wrapper p {
-            padding-top: 10px;
+            padding-top: 8px;
             text-align: center;
             letter-spacing: 0.2rem;
             font-size: 0.6rem;
@@ -438,7 +470,8 @@
 
 
         .xiazai {
-            text-align: center;
+            /* text-align: center; */
+            margin-left: 39.5%;
         }
 
         .xiazai a {
@@ -457,6 +490,8 @@
             transition: transform 0.3s ease-in-out;
             color: #0099ff;
             border: 1px solid #0099ff;
+            text-decoration: underline;
+            text-decoration-color: #a5a3a3;
         }
 
         .banquan .wrapper p {
@@ -597,18 +632,23 @@
             <div class="text">
                 <div class="p">
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;根据中国共产党的官方定义，<strong> 邓小平理论 </strong>是以<a
-                            href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3?fromModule=lemma_inlink"> 邓小平
+                            href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3?fromModule=lemma_inlink"
+                            target="_blank"> 邓小平
                         </a>为主要创立者、以建设有<a
-                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89/929612?fromModule=lemma_inlink">中国特色社会主义</a>为主题的理论。邓小平理论被中国共产党看作是<a
-                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E4%B8%AD%E5%9B%BD%E5%8C%96?fromModule=lemma_inlink">马克思主义中国化</a>的一大理论成果，是中国共产党获得的与<a
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89/929612?fromModule=lemma_inlink"
+                            target="_blank">中国特色社会主义</a>为主题的理论。邓小平理论被中国共产党看作是<a
+                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E4%B8%AD%E5%9B%BD%E5%8C%96?fromModule=lemma_inlink"
+                            target="_blank">马克思主义中国化</a>的一大理论成果，是中国共产党获得的与<a
                             href="https://baike.baidu.com/item/%E8%8B%8F%E8%81%94%E6%A8%A1%E5%BC%8F?fromModule=lemma_inlink">苏联模式</a>不同的社会主义建设经验的理论总结.
                     </p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;这一理论<strong> 主要体现 </strong>在1978年中共<a
-                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE/2087177?fromModule=lemma_inlink&fromtitle=%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=390224">十一届三中全会</a>之后邓小平的各种讲话、报告与会议决议之中。
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE/2087177?fromModule=lemma_inlink&fromtitle=%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=390224"
+                            target="_blank">十一届三中全会</a>之后邓小平的各种讲话、报告与会议决议之中。
                     </p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;1997年9月中共十五大把“<strong> 邓小平建设有中国特色社会主义理论 </strong>”直接称为“<strong> 邓小平理论
                         </strong>”，由此得名。该会议上邓小平理论被写入<a
-                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AB%A0%E7%A8%8B/383972?fromModule=lemma_inlink&fromtitle=%E5%85%9A%E7%AB%A0&fromid=680564">党章</a>中,成为其指导思想之一。
+                            href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AB%A0%E7%A8%8B/383972?fromModule=lemma_inlink&fromtitle=%E5%85%9A%E7%AB%A0&fromid=680564"
+                            target="_blank">党章</a>中,成为其指导思想之一。
                     </p>
                 </div>
                 <img src="images/dxp.jpeg" alt="" title="邓小平同志">
@@ -626,10 +666,14 @@
                             href="https://baike.baidu.com/item/%E6%A1%8E%E6%A2%8F?fromModule=lemma_inlink">桎梏</a>，促进社会主义经济和社会发展的一系列指导思想的总汇。邓小平理论与中国在80年代施行的改革开放政策密不可分。
                     </p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;不过邓小平理论被一些过“左”思想或<a
-                            href="https://baike.baidu.com/item/%E6%95%99%E6%9D%A1%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">教条主义</a>的认识和运用马克思主义的社会主义国家称为<a
-                            href="https://baike.baidu.com/item/%E4%BF%AE%E6%AD%A3%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">修正正义</a>理论，他们指责邓小平理论的其政策是剥削无产阶级，使资产阶级兴起。问题在于改革纯“<strong>公有制</strong>”的生产关系融入“<strong>私有制</strong>”，从高度集中的计划经济转变为市场经济，进而达到解放生产力和发展生产力的目的。这正是邓小平理论的根本。当然也要保证公有制的生产关系和以马克思主义为指导的意识形态必须自始至终占有统治地位。要坚持<a
-                            href="https://baike.baidu.com/item/%E5%9B%9B%E9%A1%B9%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99?fromModule=lemma_inlink">四项基本原则</a>，保证国家不会和平演变成资本主义，要反对<a
-                            href="https://baike.baidu.com/item/%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E8%87%AA%E7%94%B1%E5%8C%96?fromModule=lemma_inlink">资产阶级自由化</a>及其思想。
+                            href="https://baike.baidu.com/item/%E6%95%99%E6%9D%A1%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink"
+                            target="_blank">教条主义</a>的认识和运用马克思主义的社会主义国家称为<a
+                            href="https://baike.baidu.com/item/%E4%BF%AE%E6%AD%A3%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink"
+                            target="_blank">修正正义</a>理论，他们指责邓小平理论的其政策是剥削无产阶级，使资产阶级兴起。问题在于改革纯“<strong>公有制</strong>”的生产关系融入“<strong>私有制</strong>”，从高度集中的计划经济转变为市场经济，进而达到解放生产力和发展生产力的目的。这正是邓小平理论的根本。当然也要保证公有制的生产关系和以马克思主义为指导的意识形态必须自始至终占有统治地位。要坚持<a
+                            href="https://baike.baidu.com/item/%E5%9B%9B%E9%A1%B9%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99?fromModule=lemma_inlink"
+                            target="_blank">四项基本原则</a>，保证国家不会和平演变成资本主义，要反对<a
+                            href="https://baike.baidu.com/item/%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E8%87%AA%E7%94%B1%E5%8C%96?fromModule=lemma_inlink"
+                            target="_blank">资产阶级自由化</a>及其思想。
                     </p>
                 </div>
                 <img src="images/ssqs.jpg" alt="" class="ssqs" title="实事求是">
@@ -645,15 +689,20 @@
                 <div class="p">
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;一种科学理论的诞生，是有其历史背景和时代条件的。邓小平理论所以能够出现在当代中国，也是有着深刻原因的。</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论，是<a
-                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%88%97%E5%AE%81%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">马克思列宁主义</a>同当代中国实际相结合的产物，是<a
-                            href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3?fromModule=lemma_inlink">毛泽东思想</a>的继承<span
-                            class="textimg"></span>和发展。伟大领袖毛泽东同志和其他老一辈革命家，早就发现<a
-                            href="https://baike.baidu.com/item/%E8%8B%8F%E8%81%94%E6%A8%A1%E5%BC%8F?fromModule=lemma_inlink">苏联模式</a>的某些弊端，他们在寻找一条适合我国国情的建设社会主义道路过程中，曾经做出过许多努力，提出过许多好的思想。邓小平理论继承了这些思想和观点，逐步形成了理论体系。
+                            href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%88%97%E5%AE%81%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink"
+                            target="_blank">马克思列宁主义</a>同当代中国实际相结合的产物，是<a
+                            href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3?fromModule=lemma_inlink"
+                            target="_blank">毛泽东思想</a>的继承<span class="textimg"></span>和发展。伟大领袖毛泽东同志和其他老一辈革命家，早就发现<a
+                            href="https://baike.baidu.com/item/%E8%8B%8F%E8%81%94%E6%A8%A1%E5%BC%8F?fromModule=lemma_inlink"
+                            target="_blank">苏联模式</a>的某些弊端，他们在寻找一条适合我国国情的建设社会主义道路过程中，曾经做出过许多努力，提出过许多好的思想。邓小平理论继承了这些思想和观点，逐步形成了理论体系。
                     </p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;马克思主义产生于19世纪40年代，是资本主义矛盾激化和工人运动发展的产物。以<a
-                            href="https://baike.baidu.com/item/%E5%85%B1%E4%BA%A7%E5%85%9A%E5%AE%A3%E8%A8%80/361439?fromModule=lemma_inlink">《共产党宣言》</a>的问世为标志。它吸收和改造了人类思想文化的一切优秀成果，特别是18世纪中叶和19世纪上半叶的社会科学和自然科学的成果。它的主要理论来源是<a
-                            href="https://baike.baidu.com/item/%E5%BE%B7%E5%9B%BD%E5%8F%A4%E5%85%B8%E5%93%B2%E5%AD%A6?fromModule=lemma_inlink">德国古典哲学、英国古典政治经济学</a>和英法<a
-                            href="https://baike.baidu.com/item/%E7%A9%BA%E6%83%B3%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink">空想社会主义</a>。此外，法国启蒙学者的思想和法国复辟时期历史学家的阶级斗争学说，也为科学社会主义理论提供了有益的思想资料。19世纪科学技术的新成果，特别是细胞学说的确立，能量守恒和转化规律的发现、进化论的新发展为马克思主义的产生奠定了坚实的自然科学基础。
+                            href="https://baike.baidu.com/item/%E5%85%B1%E4%BA%A7%E5%85%9A%E5%AE%A3%E8%A8%80/361439?fromModule=lemma_inlink"
+                            target="_blank">《共产党宣言》</a>的问世为标志。它吸收和改造了人类思想文化的一切优秀成果，特别是18世纪中叶和19世纪上半叶的社会科学和自然科学的成果。它的主要理论来源是<a
+                            href="https://baike.baidu.com/item/%E5%BE%B7%E5%9B%BD%E5%8F%A4%E5%85%B8%E5%93%B2%E5%AD%A6?fromModule=lemma_inlink"
+                            target="_blank">德国古典哲学、英国古典政治经济学</a>和英法<a
+                            href="https://baike.baidu.com/item/%E7%A9%BA%E6%83%B3%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89?fromModule=lemma_inlink"
+                            target="_blank">空想社会主义</a>。此外，法国启蒙学者的思想和法国复辟时期历史学家的阶级斗争学说，也为科学社会主义理论提供了有益的思想资料。19世纪科学技术的新成果，特别是细胞学说的确立，能量守恒和转化规律的发现、进化论的新发展为马克思主义的产生奠定了坚实的自然科学基础。
                     </p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论是党在继承马克思主义和毛泽东思想的基础上结合中国实践的时代特征提出来的理论观点。</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;党的十五大报告指出：邓小平理论“是在和平与发展成为时代主题的历史条件下，在我国改革开放和现代化建设的实践中，在总结我国社会主义胜利和挫折的历史经验并借鉴其他社会主义国家兴衰成败历史经验的基础上，逐步形成和发展起来的。”这是对邓小平理论形成与发展的高度概括。
@@ -753,7 +802,8 @@
             </div>
             <div class="text">
                 <div class="p">
-                    <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;对中国社会主义建设规律的科学认识</p>
+                    <p class="strong"><img src="images/gugong.gif" alt=""
+                            class="gugong">&nbsp;&nbsp;&nbsp;&nbsp;对中国社会主义建设规律的科学认识</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;邓小平理论坚持和发展了毛泽东思想，是马克思主义在中国发展的新阶段。它坚持解放思想、实事求是，在新的实践基础上继承前人又突破陈规，它开拓了马克思主义的新境界。
                     </p>
                     <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;改革开放和社会主义现代化建设的科学指南</p>
@@ -762,9 +812,7 @@
                     <p class="strong">&nbsp;&nbsp;&nbsp;&nbsp;党和国家必须长期坚持的指导思想</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;今天我们推进中国特色社会主义的伟大事业，仍然要继续围绕什么是社会主义、怎样建设社会主义这个首要的基本的理论问题，紧紧抓住实事求是的思想路线，不断推进思想的解放；紧紧抓住和深入领会“两手抓，两手都要硬”的基本方针，推动经济社会的全面发展；贯彻执行“一个中心、两个基本点”的基本路线；紧紧抓住和领会社会主义初级阶段的理论。努力完成分“三步走”基本实现现代化的战略任务等等。这些根本性的指针，关系到中国特色社会主义的命运和前途，我们不能有任何动摇。
                     </p>
-
                 </div>
-                <img src="images/zdyy.jpg" alt="">
             </div>
 
             <div class="one">
@@ -785,13 +833,21 @@
 
     <!-- 版权区域 -->
     <div class="banquan">
-        <div class="xiazai"><a href="" class="hover">点击查看/下载源码-1240189611@qq.com</a></div>
+        <a href="https://gitee.com/luoqiao-bridge" class="luoqiao hover" target="_blank"><img src="images/luoqiao.jpg"
+                alt="">
+            <span>&nbsp;--MY-Gitee</span>
+        </a>
+        <div class="xiazai">
+            <a href="屎山" class="hover" target="_blank">点击查看/下载源码-1240189611@qq.com</a>
+        </div>
         <div class="wrapper">
             <p>Copyright&nbsp;©&nbsp;2023 - 2xxx&nbsp;- MTQ
                 <br>
                 All&nbsp;Rights&nbsp;Reserved
             </p>
-            <p class="hover"><a href="">Signature&nbsp;:&nbsp;希望你每个昨天,今天,明天&nbsp;都能快乐</a></p>
+            <p class="hover"><a href="https://blog.csdn.net/2201_75533641?type=blog"
+                    target="_blank">My-CSDN&nbsp;:&nbsp;希望你每个昨天,今天,明天&nbsp;都能快乐</a>
+            </p>
         </div>
     </div>
 </body>

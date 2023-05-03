@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .banner {
+            width: 564px;
+            height: 315px;
+            /* background-color: orange; */
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 图片 */
+        .banner img {
+            width: 564px;
+            border-radius: 12px;
+            vertical-align: middle;
+        }
+
+        /* 鼠标划到banner区域,箭头显示 */
+        .banner:hover .prev,
+        .banner:hover .next {
+            display: block;
+        }
+
+        .banner ul {
+            display: flex;
+        }
+
+        .banner .prev,
+        .banner .next {
+            /* 隐藏元素 */
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: #fff;
+            line-height: 30px;
+        }
+
+        .banner .prev {
+            left: 0;
+            border-radius: 0px 15px 15px 0px;
+        }
+
+        .banner .next {
+            right: 0;
+            border-radius: 15px 0px 0px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <!-- 图片 -->
+        <ul>
+            <li><a href="#"><img src="images/banner1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/banner2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/banner3.jpg" alt=""></a></li>
+        </ul>
+        <!-- 箭头 -->
+        <a href="#" class="prev">
+            <i class="iconfont icon-zuoce"></i>
+        </a>
+        <a href="#" class="next">
+            <i class="iconfont icon-youce"></i>
+        </a>
+
+        <!-- 圆点 -->
+    </div>
+</body>
+
+</html>

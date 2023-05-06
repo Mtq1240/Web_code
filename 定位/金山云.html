@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金山云</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        .box {
+            height: 620px;
+            background: url(images/003_02.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .w {
+            width: 1000px;
+            height: 620px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .w ol {
+            position: absolute;
+            display: flex;
+            width: 96px;
+            height: 18px;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+        }
+
+        .w ol li {
+            border-radius: 50%;
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+            background-color: #acacad;
+        }
+
+        .box ol li:last-child {
+            margin-right: 0;
+        }
+
+        .box ol .active {
+            background-color: #fff;
+        }
+
+        .box .w::after {
+            content: "<";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, .4);
+            font-size: 22px;
+            color: #fff;
+            font-family: 宋体;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+
+        .box .w::before {
+            content: ">";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, .4);
+            font-size: 22px;
+            color: #fff;
+            font-family: 宋体;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="w">
+            <ol>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

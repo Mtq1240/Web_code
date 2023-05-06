@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航二维码</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+
+        .daohang {
+            height: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .daohang ul {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            /* 自动内减 */
+            box-sizing: border-box;
+            width: 20%;
+            height: 40px;
+            line-height: 40px;
+            border-right: 1px solid #ccc;
+            text-align: center;
+        }
+
+        ul .last {
+            border-right: none;
+        }
+
+        ul li a {
+            /* a标签默认是行内元素，宽高由内容撑开，并且无法设置宽高，此时默认情况用户只能点击文字区域才能调整 */
+            /* 如果把a标签转换成块级元素，此时可以设置宽高，会让a标签范围更大，用户可以点击调整的区域也越大 */
+            display: block;
+            /* 宽度不设置块元素会默认占满一行 */
+            height: 40px;
+        }
+
+        ul li .app {
+            position: relative;
+        }
+
+        ul li .app .code {
+            /* 图片默认隐藏 */
+            display: none;
+            /* 子绝父相 */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            /* 为了img标签不遮住a标签的主体内容 */
+            top: 40px;
+            border: 1px solid #ccc;
+        }
+
+        ul li .app:hover .code {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="daohang">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#" class="app">手机微金所<img src="images/code.jpg" alt="" class="code"></a></li>
+            <li class="last"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

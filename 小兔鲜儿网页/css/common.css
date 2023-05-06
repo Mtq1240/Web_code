@@ -1,0 +1,141 @@
+/* 头尾各个页面相同的样式 */
+
+/* 版心区域 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+}
+
+.shortcut ul {
+    display: flex;
+    line-height: 52px;
+}
+
+.shortcut ul li a {
+    color: #fff;
+    font-size: 14px;
+    border-right: 1px solid #999;
+    padding: 0px 15px;
+}
+
+.shortcut li:first-child a {
+    color: #5EB69C;
+}
+
+.shortcut li:last-child a {
+    border-right: 0;
+}
+
+.shortcut li .iconfont {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* 头部区域 */
+.header {
+    display: flex;
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+/* logo区域 */
+.logo {
+    margin-right: 40px;
+    width: 200px;
+    height: 88px;
+}
+
+.logo a {
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+
+/* 导航区域 */
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav ul li {
+    margin-right: 47px;
+}
+
+.nav li a {
+    padding-bottom: 10px;
+}
+
+.nav li a:hover {
+    color: #5EB69C;
+    border-bottom: 1px solid #5EB69C;
+}
+
+/* 搜索区域 */
+.search {
+    display: flex;
+    margin-top: 33px;
+    width: 170px;
+    height: 34px;
+    margin-right: 45px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.search .iconfont {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search input {
+    /* 浏览器优先生效 input 标签的默认宽度, 所以 flex: 1;不生效 */
+    /* 解决办法: 重置 input 默认宽度 width: 0; */
+    flex: 1;
+    width: 0;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* 购物车区域 */
+.cart {
+    margin-top: 32px;
+    position: relative;
+}
+
+.cart .iconfont {
+    font-size: 24px;
+}
+
+.cart i {
+    position: absolute;
+    top: 1px;
+    /* right:文字多了向左撑开,left:可以向右撑开 */
+    left: 15px;
+    padding: 0 6px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fffefe;
+    line-height: 15px;
+}

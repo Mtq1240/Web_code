@@ -132,10 +132,29 @@
     /* right:文字多了向左撑开,left:可以向右撑开 */
     left: 15px;
     padding: 0 6px;
+    /* 宽度不设置,靠内容撑开 */
     height: 15px;
     background-color: #e26237;
     border-radius: 8px;
     font-size: 14px;
     color: #fffefe;
     line-height: 15px;
+}
+
+/* footer */
+.footer {
+    height: 580px;
+    background-color: #f5f5f5;
+}
+
+/* 服务 */
+.service {
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* 帮助中心 */
+.help {
+    height: 300px;
+
 }

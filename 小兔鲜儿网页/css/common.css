@@ -22,6 +22,10 @@
     line-height: 52px;
 }
 
+.shortcut ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
 .shortcut ul li a {
     color: #fff;
     font-size: 14px;
@@ -57,6 +61,10 @@
     height: 88px;
 }
 
+.logo h1 {
+    transition: transform 0.3s ease-in-out;
+}
+
 .logo a {
     display: block;
     width: 200px;
@@ -77,6 +85,7 @@
 
 .header .nav ul li {
     margin-right: 47px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav li a {
@@ -149,12 +158,124 @@
 
 /* 服务 */
 .service {
+    padding: 60px 0;
     height: 178px;
     border-bottom: 1px solid #e8e8e8;
 }
 
+.service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service li {
+    display: flex;
+    width: 190px;
+    height: 58px;
+    transition: transform 0.3s ease-in-out;
+    /* background-color: pink; */
+}
+
+.service li h5 {
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+
+.service li:nth-child(2) h5 {
+    background-position: 0 -58px;
+}
+
+.service li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+
+.service li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+
+.service li p {
+    text-align: center;
+    line-height: 58px;
+    font-size: 28px;
+
+}
+
 /* 帮助中心 */
 .help {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
     height: 300px;
+}
 
+/* left */
+.help .left {
+    display: flex;
+}
+
+.help .left dl {
+    margin-right: 84px;
+}
+
+.help .left dl:last-child {
+    margin-right: 0;
+}
+
+.help .left dt {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.help .left dd {
+    margin-bottom: 10px;
+}
+
+.help .left a {
+    color: #969696;
+}
+
+.help .left .iconfont {
+    color: #5eb69c;
+}
+
+/* right */
+.help .right ul {
+    display: flex;
+}
+
+.help .right li:first-child {
+    margin-right: 55px;
+}
+
+.help .right .pic {
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.help .right p {
+    color: #969696;
+    text-align: center;
+}
+
+/* 版权 */
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+    color: #969696;
+}
+
+.copyright p a {
+    margin: 0 10px;
+    color: #969696;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    /* 当鼠标悬停在元素上时，将元素放大 1.2 倍 */
 }

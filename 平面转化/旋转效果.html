@@ -9,14 +9,16 @@
     <style>
         img {
             width: 200px;
+            border: 1px solid #000;
             transition: all 2s;
+            /* 默认是盒子的中心点旋转,transform-origin: 水平位置 垂直位置; */
+            transform-origin: right bottom;
         }
 
         /* 鼠标悬停图片 ,图片旋转 */
         img:hover {
             /* 正数顺时针,负数逆时针 角度单位 deg */
             transform: rotate(360deg);
-            transform: rotate(-360deg);
         }
     </style>
 </head>

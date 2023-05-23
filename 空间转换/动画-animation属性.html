@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation属性</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            /* 属性: */
+            /* 1.速度曲线 linear: 匀速 ; steps: 分步动画 工作中 配合精灵图实现精灵动画 */
+            animation: change 1s linear;
+            animation: change 1s steps(3);
+
+            /* 2.延迟时间 :如果有两个时间 第一个是 动画时长 第二个表示延迟时间 */
+            animation: change 1s 2s;
+
+            /* 3.重复次数: infinite: 无限循环 也可以取数值 */
+            animation: change 1s 3;
+            animation: change 1s infinite;
+
+            /* 4.动画方向: alternate: 反向 */
+            animation: change 1s infinite alternate;
+
+            /* 5.执行完毕时的状态: forwards:结束状态 backwards:默认初始状态 */
+            animation: change 1s forwards;
+        }
+
+        /* 宽度从 200 变化到 800 */
+        @keyframes change {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="box"></div>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation拆分属性</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            animation-name: change;
+            /* 动画时长 */
+            animation-duration: 1s;
+            /* 重复次数 */
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes change {
+            0% {
+                width: 200px;
+            }
+
+            100% {
+                width: 800px;
+            }
+        }
+
+        .box:hover {
+            /* 配合鼠标悬停动画暂停状态 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+// out: ../css/
+
+@import "./base";
+
+// 定义变量
+@rootSize: 37.5rem;
+
+// 头部
+.header {
+    height: (44 / @rootSize);
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 (15 / @rootSize);
+    line-height: (44 / @rootSize);
+}

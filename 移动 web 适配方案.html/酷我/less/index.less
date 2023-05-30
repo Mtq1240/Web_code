@@ -13,8 +13,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    // 定位转盒子显示模式,设置宽高生效,因为宽度没有设置,所以宽度不生效
+    position: fixed;
+    left: 0;
+    top: 0;
+
     padding: 0 (15 / @vw);
     height: (50 / @vw);
+    width: 100%;
     background-color: #fff;
 
     // 左边
@@ -41,6 +48,8 @@ body {
 // 搜索区域
 .search {
     padding: (10 / @vw) (15 / @vw);
+    // 头部固定定位,脱标不占位,搜索去最顶了,加上margin-top挤下来
+    margin-top: (50 / @vw);
     height: (52 / @vw);
 
     // 搜索文字
@@ -185,13 +194,49 @@ body {
                     line-height: (28 / @vw);
                     border-radius: 0 (10 / @vw) 0 (10 / @vw);
                 }
-
-                .txt {
-                    font-size: (14 / @vw);
-                }
             }
 
             // 文字
+            .txt {
+                font-size: (14 / @vw);
+            }
         }
+    }
+}
+
+// 安装下载
+.dowload {
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    left: (15 / @vw);
+    bottom: (30 / @vw);
+
+    padding: 0 (10 / @vw) 0 (15 / @vw);
+    width: (345 / @vw);
+    height: (45 / @vw);
+    background-color: #fff;
+    border-radius: (22 / @vw);
+
+    img {
+        width: (36 / @vw);
+        height: (36 / @vw);
+        margin-right: (10 / @vw);
+    }
+
+    p {
+        flex: 1;
+        font-size: (14 / @vw);
+    }
+
+    span {
+        width: (32 / @vw);
+        height: (32 / @vw);
+        background-color: #f2f3f5;
+        font-size: (16 / @vw);
+        border-radius: 50%;
+        text-align: center;
+        line-height: (32 / @vw);
     }
 }

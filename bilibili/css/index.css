@@ -1,0 +1,350 @@
+.bili-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/*  nav 导航栏区域 */
+.left-entry {
+    display: flex;
+}
+
+.left-entry .entry-title {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.left-entry .entry-title svg {
+    margin-right: 6px;
+}
+
+/* nav 中间的搜索区域 */
+.center-search {
+    flex: 1;
+    height: 40px;
+    padding: 0 48px 0 4px;
+    border-radius: 8px;
+    border: 1px solid #e3e5e7;
+    background-color: #f1f2f3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.center-search:hover {
+    background-color: #fff;
+}
+
+.center-search .nav-search-content {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.center-search .input-search {
+    flex: 1;
+    background-color: transparent;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.center-search .nav-search-button {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.center-search .nav-search-button:hover {
+    background-color: #e3e4e5;
+}
+
+/* 右侧导航栏 */
+.right-entry {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.right-entry .header {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.right-entry .header a {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: #00aeec;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.right-entry .right-entry-item {
+    min-width: 50px;
+    margin-right: 4px;
+}
+
+.right-entry .right-entry-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.right-entry-item a span {
+    font-size: 13px;
+}
+
+.right-entry .up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #fb7299;
+    margin-left: 10px;
+}
+
+.right-entry .up span {
+    margin-left: 5px;
+}
+
+.right-entry .up a {
+    color: #fff;
+}
+
+/* banner 区域 */
+.bili-nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.bili-banner {
+    position: relative;
+    height: 155px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bili-banner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bili-banner .logo {
+    width: 100%;
+    height: 100%;
+    padding: 0 64px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bili-banner .logo a {
+    width: 162px;
+    height: 78px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* 频道区域 */
+.bili-channel {
+    height: 110px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+.bili-channel .left {
+    display: flex;
+}
+
+.bili-channel .left a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.bili-channel .public {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.bili-channel .one {
+    background-color: #ff9212;
+}
+
+.bili-channel .two {
+    background-color: #f07775;
+}
+
+.bili-channel .three {
+    background-color: #59ca73;
+}
+
+.bili-channel .public svg {
+    width: 25px;
+    height: 35px;
+}
+
+.bili-channel .left span {
+    text-align: center;
+}
+
+/* 左侧频道区域 */
+.bili-channel .right {
+    width: 100%;
+    display: flex;
+}
+
+.bili-channel .channel-left {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.bili-channel .channel-left a {
+    height: 26px;
+    line-height: 26px;
+    background-color: #f6f7f8;
+    border: 1px solid #f1f2f3;
+    border-radius: 6px;
+    text-align: center;
+    color: #61666d;
+}
+
+/* 右侧频道区域 */
+.bili-channel .channel-right {
+    display: grid;
+    width: 240px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    row-gap: 10px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.channel-right a {
+    width: 100%;
+    height: 28px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.channel-right svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    fill: #61666d;
+}
+
+.channel-right span {
+    color: #61666d;
+}
+
+/* 主体推荐列表区域 */
+.main {
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.main .recommend {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.main .re-card .card-img {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 底部信息 */
+.card-bottom h3 {
+    line-height: 22px;
+    padding-right: 16px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.card-bottom {
+    margin-top: 4px;
+    display: flex;
+    font-size: 13px;
+}
+
+.card-bottom a {
+    color: #9499a0;
+    display: flex;
+    align-items: center;
+}
+
+.card-bottom svg {
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.card-bottom .date {
+    margin-left: 10px;
+}
+
+/* 轮播图 */
+.recommend .area {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.area {
+    width: 100%;
+}

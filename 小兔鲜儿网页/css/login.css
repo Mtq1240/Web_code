@@ -1,0 +1,167 @@
+.xtx-login-header {
+    width: 1170px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+.xtx-login-header .logo {
+    width: 200px;
+    height: 132px;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.xtx-login-header .home {
+    float: right;
+    margin-top: 82px;
+    font-size: 16px;
+    padding-right: 24px;
+    background: url(../images/login-enter.png) no-repeat right;
+}
+
+.xtx-login-main {
+    height: 488px;
+    background: url(../images/login-bg.png) no-repeat center/cover;
+}
+
+.xtx-login-main .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.xtx-login-main .wrapper .box {
+    width: 380px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.xtx-login-main .wrapper .box .tab-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xtx-login-main .wrapper .box .tab-nav a {
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.xtx-login-main .wrapper .box .tab-nav a.active {
+    border-bottom: 2px solid #17bb9b;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .code {
+    display: block;
+    margin: 44px auto;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .link {
+    text-align: right;
+    padding-top: 12px;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .link a {
+    color: #17bb9b;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .input {
+    border: 1px solid #17bb9b;
+    width: 100%;
+    height: 36px;
+    margin-top: 17px;
+    display: flex;
+    background: #CFCDCD;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .input input {
+    flex: 1;
+    padding-left: 15px;
+    background: #fff;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .input input::placeholder {
+    color: #B3B3B3;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .agree {
+    color: #B3B3B3;
+    padding: 17px 0;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .agree a {
+    color: #0673B1;
+}
+
+.xtx-login-main .wrapper .box .tab-pane .button {
+    margin-bottom: 15px;
+}
+
+/* 登录按钮 */
+.xtx-login-main .wrapper .box .tab-pane .button .dl {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #17bb9b;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+footer .other {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other dl dt {
+    color: #999999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.other dd img {
+    width: 35px;
+    height: 35px;
+}
+
+.other dd {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 90px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.other .rexian p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #999999;
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #999999;
+}

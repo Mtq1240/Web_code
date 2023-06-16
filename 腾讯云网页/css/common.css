@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000026;
+}
+
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* header区域 */
+.header {
+    background-color: #2b303b;
+    height: 40px;
+}
+
+.header .wrapper a {
+    /* 行转块,设置高居中对齐 */
+    display: block;
+    line-height: 40px;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .wrapper ul {
+    display: flex;
+}
+
+.header .wrapper ul li {
+    margin-top: 14px;
+    font-size: 10px;
+    color: white;
+    border-right: 2px solid white;
+    line-height: 10px;
+    padding-right: 9px;
+    padding-left: 9px;
+    text-align: center;
+}

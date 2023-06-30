@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学号姓名</title>
+    <style>
+        /* 全局样式 */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        * {
+            /* 清除列表的圆点 */
+            list-style: none;
+            /* 清除超链接下划线 */
+            text-decoration: none;
+            /* 设置默认字体颜色 */
+            color: black;
+        }
+
+
+        /* 头部一行显示 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 头部标题 */
+        .header .title {
+            color: orange;
+            font-size: 57px;
+            font-family: "Helvetica", sans-serif;
+            font-weight: bold;
+            text-shadow: 0px 2px 4px rgba(255, 136, 0, 0.598);
+            margin: 20px;
+        }
+
+        /* 导航栏(超链接) */
+        .header .nav {
+            font-size: 36px;
+        }
+
+        .nav ul {
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+
+        .nav ul a {
+            color: skyblue;
+        }
+
+        /* li放大效果时平滑过渡 */
+        .nav ul li {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* 鼠标悬停放大1.2倍 */
+        .nav ul li:hover {
+            transform: scale(1.2);
+        }
+
+        /* 分隔线 用多个盒子实现,并设置不同盒子的宽高背景色 */
+        .line {
+            display: flex;
+        }
+
+        .line div {
+            width: 100%;
+            height: 15px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .skyblue {
+            background-color: skyblue;
+        }
+
+        /* 图片区域 */
+        .pic {
+            display: flex;
+            height: 500px;
+            margin: 20px 10px;
+        }
+
+        .pic .left img {
+            width: 1000px;
+            height: 500px;
+            margin-right: 20px;
+        }
+
+        .pic .right img {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* 表格区域 */
+        table {
+            margin-left: 30px;
+            width: 90%;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        /* 版权区域 */
+        .copyright {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(244, 244, 157);
+        }
+
+        .copyright p {
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <!-- 标题区域 -->
+        <div class="title">
+            高腾腾+信息系安排
+        </div>
+        <!-- 导航栏(超链接) -->
+        <div class="nav">
+            <ul>
+                <li><a href="https://www.zbnc.edu.cn/search.jsp?wbtreeid=1080">学校官网</a></li>
+                <li><a href="https://www.zbnc.edu.cn/lm1/lm11.htm">学校简介</a></li>
+                <li><a href="http://iis.zbnc.edu.cn/index.jsp">所属分院官网</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 分断线 -->
+    <div class="line">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="pink"></div>
+        <div class="skyblue"></div>
+    </div>
+
+    <!-- 图片区域 -->
+    <div class="pic">
+        <div class="left">
+            <img src="./xuexiao.jpg" alt="学校">
+        </div>
+        <div class="right">
+            <img src="./xuexiao2.jpg" alt="学校">
+            <img src="./xuexiao3.jpg" alt="学校">
+        </div>
+    </div>
+
+    <!-- 表格区域 -->
+    <table>
+        <tr>
+            <th></th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>
+        </tr>
+        <tr>
+            <th rowspan="2">上午</th>
+            <td>语文</td>
+            <td>数学</td>
+            <td>外语</td>
+            <td>数学</td>
+            <td>语文</td>
+        </tr>
+        <tr>
+            <td>数学</td>
+            <td>外语</td>
+            <td>语文</td>
+            <td>历史</td>
+            <td>政治</td>
+        </tr>
+        <tr>
+            <td colspan="6">休息</td>
+        </tr>
+        <tr>
+            <th rowspan="2">下午</th>
+            <td>历史</td>
+            <td>体育</td>
+            <td>音乐</td>
+            <td>政治</td>
+            <td>美术</td>
+        </tr>
+        <tr>
+            <td>班会</td>
+            <td>自习</td>
+            <td>自习</td>
+            <td>自习</td>
+            <td>自习</td>
+        </tr>
+    </table>
+
+    <!-- 版权区域 -->
+    <div class="copyright">
+        <p>Copyright@+个人的院系专业班级</p>
+    </div>
+</body>
+
+</html>
